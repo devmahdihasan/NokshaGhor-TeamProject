@@ -7,4 +7,6 @@ export interface Product {
   category: string;
   rating: number;
   inStock: boolean;
+  sale?: boolean;
+  tags?: string[];
 }
