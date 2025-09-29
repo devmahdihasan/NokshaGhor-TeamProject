@@ -1,116 +1,102 @@
-"use client";
-
-import { useState } from "react";
+// src/app/contact/page.tsx
 
 export default function ContactPage() {
-  const [formData, setFormData] = useState({
-    name: "",
-    email: "",
-    phone: "",
-    message: "",
-  });
-
-  const handleChange = (
-    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
-  ) => {
-    setFormData({ ...formData, [e.target.name]: e.target.value });
-  };
-
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    console.log("Form Submitted:", formData);
-    alert("Thank you for contacting us!");
-    setFormData({ name: "", email: "", phone: "", message: "" });
-  };
-
   return (
-    <main className="min-h-screen bg-gray-50 text-gray-800 p-10">
-      <section className="max-w-4xl mx-auto space-y-12">
-        <h1 className="text-4xl font-bold text-center mb-6">Contact Us</h1>
-        <p className="text-lg text-center mb-10">
-          We would love to hear from you. Reach out to us using the details
-          below or fill in the form.
+    <main className="bg-white text-gray-800 min-h-screen py-12 px-6 sm:px-10 md:px-20">
+
+      {/* Page Title */}
+      <section className="text-center mb-12">
+        <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+          Contact Us
+        </h1>
+        <p className="text-base sm:text-lg text-gray-600 max-w-2xl mx-auto">
+          Have questions or need support? We’re here to help you. 
+          Reach out through any of the options below.
         </p>
+      </section>
 
-        {/* Contact Information */}
-        <div className="grid md:grid-cols-2 gap-8 mb-12">
-          <div className="bg-white p-6 rounded-2xl shadow-md">
-            <h2 className="text-2xl font-semibold mb-3">Our Office</h2>
-            <p>Dhaka, Bangladesh</p>
-            <p>Mobile: +880 1234-567890</p>
-            <p>Email: support@nokshaghor.com</p>
-          </div>
-
-          <div className="bg-white p-6 rounded-2xl shadow-md">
-            <h2 className="text-2xl font-semibold mb-3">Business Hours</h2>
-            <p>Saturday - Thursday: 9:00 AM - 8:00 PM</p>
-            <p>Friday: Closed</p>
-          </div>
+      {/* Info Cards */}
+      <section className="grid gap-6 sm:grid-cols-1 md:grid-cols-3 mb-16">
+        {/* Card 1 */}
+        <div className="bg-gray-50 p-6 rounded-xl shadow hover:shadow-lg transition">
+          <h3 className="text-lg font-semibold text-gray-900 mb-2">Contact Us</h3>
+          <p className="text-orange-600 font-bold text-lg">16793 / 09678002003</p>
+          <h3 className="text-lg font-semibold text-gray-900 mt-4 mb-2">Gmail</h3>
+          <p className="text-orange-600 font-bold text-lg">nokshaghor23@gmail.com</p>
         </div>
 
-        {/* Contact Form */}
-        <div className="bg-white p-6 rounded-2xl shadow-md">
-          <h2 className="text-2xl font-semibold mb-6 text-center">
-            Send Us a Message
-          </h2>
-          <form onSubmit={handleSubmit} className="space-y-4">
-            <div>
-              <label className="block font-medium mb-1">Name</label>
-              <input
-                type="text"
-                name="name"
-                value={formData.name}
-                onChange={handleChange}
-                className="w-full p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
-                required
-              />
-            </div>
+        {/* Card 2 */}
+        <div className="bg-gray-50 p-6 rounded-xl shadow hover:shadow-lg transition">
+          <h3 className="text-lg font-semibold text-gray-900 mb-2">Address</h3>
+          <p className="text-orange-600 font-bold text-lg">Chattogram, Bangladesh</p>
+        </div>
 
-            <div>
-              <label className="block font-medium mb-1">Email</label>
-              <input
-                type="email"
-                name="email"
-                value={formData.email}
-                onChange={handleChange}
-                className="w-full p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
-                required
-              />
-            </div>
-
-            <div>
-              <label className="block font-medium mb-1">Phone Number</label>
-              <input
-                type="tel"
-                name="phone"
-                value={formData.phone}
-                onChange={handleChange}
-                className="w-full p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
-                required
-              />
-            </div>
-
-            <div>
-              <label className="block font-medium mb-1">Message</label>
-              <textarea
-                name="message"
-                rows={4}
-                value={formData.message}
-                onChange={handleChange}
-                className="w-full p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
-                required
-              ></textarea>
-            </div>
-
-            <button
-              type="submit"
-              className="w-full bg-blue-600 text-white py-3 rounded-lg font-semibold hover:bg-blue-700 transition"
-            >
-              Submit
-            </button>
-          </form>
+        {/* Card 3 */}
+        <div className="bg-gray-50 p-6 rounded-xl shadow hover:shadow-lg transition">
+          <h3 className="text-lg font-semibold text-gray-900 mb-2">Get Online Support</h3>
+          <a
+            href="#"
+            className="text-blue-600 font-medium hover:underline"
+          >
+            Request Support →
+          </a>
         </div>
       </section>
+
+      {/* Contact Form */}
+      <section className="max-w-3xl mx-auto bg-gray-50 p-6 sm:p-8 rounded-xl shadow-md">
+        <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-6">Send Us a Message</h2>
+        <form className="space-y-5 sm:space-y-6">
+          {/* Name */}
+          <div>
+            <label className="block text-sm font-medium text-gray-700 mb-1">Name</label>
+            <input
+              type="text"
+              className="w-full border border-gray-300 rounded-lg px-4 py-2 focus:ring-2 focus:ring-orange-500 focus:outline-none"
+              placeholder="Your Name"
+            />
+          </div>
+
+          {/* Email */}
+          <div>
+            <label className="block text-sm font-medium text-gray-700 mb-1">Email</label>
+            <input
+              type="email"
+              className="w-full border border-gray-300 rounded-lg px-4 py-2 focus:ring-2 focus:ring-orange-500 focus:outline-none"
+              placeholder="you@example.com"
+            />
+          </div>
+
+          {/* Phone */}
+          <div>
+            <label className="block text-sm font-medium text-gray-700 mb-1">Phone Number</label>
+            <input
+              type="tel"
+              className="w-full border border-gray-300 rounded-lg px-4 py-2 focus:ring-2 focus:ring-orange-500 focus:outline-none"
+              placeholder="+880 1XXX-XXXXXX"
+            />
+          </div>
+
+          {/* Message */}
+          <div>
+            <label className="block text-sm font-medium text-gray-700 mb-1">Message</label>
+            <textarea
+              rows={4}
+              className="w-full border border-gray-300 rounded-lg px-4 py-2 focus:ring-2 focus:ring-orange-500 focus:outline-none"
+              placeholder="Write your message..."
+            ></textarea>
+          </div>
+
+          {/* Submit */}
+          <button
+            type="submit"
+            className="w-full bg-orange-600 text-white font-semibold py-3 rounded-lg shadow-md hover:bg-orange-700 transition"
+          >
+            Submit
+          </button>
+        </form>
+      </section>
+
     </main>
   );
 }
