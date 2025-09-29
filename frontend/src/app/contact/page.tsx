@@ -1,9 +1,11 @@
 // src/app/contact/page.tsx
-
+import Nav from '../../app/nav'
+import Hero from '../../app/hero'
+import Footer from '../../app/footer'
 export default function ContactPage() {
   return (
     <main className="bg-white text-gray-800 min-h-screen py-12 px-6 sm:px-10 md:px-20">
-
+     <Nav />
       {/* Page Title */}
       <section className="text-center mb-12">
         <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 mb-4">
@@ -90,7 +92,7 @@ export default function ContactPage() {
           </button>
         </form>
       </section>
-
+     <Footer />
     </main>
   );
 }
