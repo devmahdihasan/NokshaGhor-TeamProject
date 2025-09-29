@@ -21,8 +21,6 @@ export default function ContactPage() {
         <div className="bg-gray-50 p-6 rounded-xl shadow hover:shadow-lg transition">
           <h3 className="text-lg font-semibold text-gray-900 mb-2">Contact Us</h3>
           <p className="text-orange-600 font-bold text-lg">16793 / 09678002003</p>
-          <h3 className="text-lg font-semibold text-gray-900 mt-4 mb-2">Gmail</h3>
-          <p className="text-orange-600 font-bold text-lg">nokshaghor23@gmail.com</p>
         </div>
 
         {/* Card 2 */}
@@ -33,13 +31,9 @@ export default function ContactPage() {
 
         {/* Card 3 */}
         <div className="bg-gray-50 p-6 rounded-xl shadow hover:shadow-lg transition">
-          <h3 className="text-lg font-semibold text-gray-900 mb-2">Get Online Support</h3>
-          <a
-            href="#"
-            className="text-blue-600 font-medium hover:underline"
-          >
-            Request Support →
-          </a>
+          <h3 className="text-lg font-semibold text-gray-900 mt-4 mb-2">Gmail</h3>
+          <p className="text-orange-600 font-bold text-lg">nokshaghor23@gmail.com</p>
+        
         </div>
       </section>
 

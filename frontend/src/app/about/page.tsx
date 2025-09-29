@@ -1,9 +1,13 @@
 // src/app/about/page.tsx
+import Nav from '../../app/nav'
+import Hero from '../../app/hero'
+import Footer from '../../app/footer'
 
 export default function AboutPage() {
   return (
     <main className="bg-white text-gray-800 min-h-screen py-12 px-6 sm:px-10 md:px-20">
-
+      <Nav />
+      <Hero />
       {/* Page Title */}
       <section className="text-center mb-12 md:mb-16">
         <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 mb-4">
@@ -144,7 +148,7 @@ export default function AboutPage() {
           Contact Us
         </a>
       </section>
-
+      <Footer />
     </main>
   );
 }
