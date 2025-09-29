@@ -3,497 +3,2598 @@ import { Product } from '../types/product';
 export const products: Product[] = [
   {
     "id": 1,
-    "name": "AuraFlow ANC Headphones",
-    "price": 1299,
-    "description": "Premium wireless headphones featuring advanced active noise cancellation and a comfortable, ergonomic design for a superior listening experience.",
+    "name": "Auraflow Headphones",
+    "price": 6151,
+    "description": "High-quality accessories product.",
     "image": "/images/auraflow-headphones.avif",
-    "category": "Audio",
-    "rating": 4.8,
+    "images": [
+      "/images/auraflow-headphones.avif"
+    ],
+    "category": "Accessories",
+    "rating": 4.6,
     "inStock": true,
-    "sale": true
+    "sale": false,
+    "keyFeatures": [
+      "High-quality product",
+      "Durable and reliable",
+      "Great value"
+    ],
+    "specifications": [
+      {
+        "feature": "Product Name",
+        "details": "Auraflow Headphones"
+      },
+      {
+        "feature": "Category",
+        "details": "Accessories"
+      },
+      {
+        "feature": "Warranty",
+        "details": "1 Year"
+      }
+    ]
   },
   {
     "id": 2,
-    "name": "ChronoFit Smartwatch",
-    "price": 2499,
-    "description": "Feature-rich smartwatch with health monitoring, notifications, and customizable watch faces for modern lifestyle tracking.",
+    "name": "Chronofit Watch",
+    "price": 5097,
+    "description": "High-quality electronics product.",
     "image": "/images/chronofit-watch.avif",
+    "images": [
+      "/images/chronofit-watch.avif"
+    ],
     "category": "Electronics",
-    "rating": 4.5,
+    "rating": 4.9,
     "inStock": true,
-    "sale": false
+    "sale": true,
+    "keyFeatures": [
+      "Modern design",
+      "Energy efficient",
+      "Easy to use",
+      "Durable build quality",
+      "Compatible with latest devices"
+    ],
+    "specifications": [
+      {
+        "feature": "Product Name",
+        "details": "Chronofit Watch"
+      },
+      {
+        "feature": "Input",
+        "details": "USB-C / 5V"
+      },
+      {
+        "feature": "Material",
+        "details": "ABS Plastic"
+      },
+      {
+        "feature": "Dimensions",
+        "details": "Varies by model"
+      },
+      {
+        "feature": "Color Options",
+        "details": "Black, Silver"
+      },
+      {
+        "feature": "Warranty",
+        "details": "1 Year"
+      }
+    ]
   },
   {
     "id": 3,
-    "name": "ErgoGlide Office Chair",
-    "price": 4899,
-    "description": "Ergonomic office chair with adjustable lumbar support, breathable mesh back, and smooth-rolling casters for all-day comfort.",
+    "name": "Ergoglide Chair",
+    "price": 4497,
+    "description": "High-quality accessories product.",
     "image": "/images/ergoglide-chair.avif",
-    "category": "Furniture",
-    "rating": 4.7,
+    "images": [
+      "/images/ergoglide-chair.avif"
+    ],
+    "category": "Accessories",
+    "rating": 4.5,
     "inStock": true,
-    "sale": true
+    "sale": true,
+    "keyFeatures": [
+      "High-quality product",
+      "Durable and reliable",
+      "Great value"
+    ],
+    "specifications": [
+      {
+        "feature": "Product Name",
+        "details": "Ergoglide Chair"
+      },
+      {
+        "feature": "Category",
+        "details": "Accessories"
+      },
+      {
+        "feature": "Warranty",
+        "details": "1 Year"
+      }
+    ]
   },
   {
     "id": 4,
-    "name": "Essential Crew Neck T-Shirt",
-    "price": 499,
-    "description": "Classic crew neck t-shirt made from premium cotton blend for softness and durability, available in multiple colors.",
+    "name": "Essential Tee",
+    "price": 3260,
+    "description": "High-quality accessories product.",
     "image": "/images/essential-tee.avif",
-    "category": "Clothing",
-    "rating": 4.6,
+    "images": [
+      "/images/essential-tee.avif"
+    ],
+    "category": "Accessories",
+    "rating": 4.2,
     "inStock": true,
-    "sale": false
+    "sale": false,
+    "keyFeatures": [
+      "High-quality product",
+      "Durable and reliable",
+      "Great value"
+    ],
+    "specifications": [
+      {
+        "feature": "Product Name",
+        "details": "Essential Tee"
+      },
+      {
+        "feature": "Category",
+        "details": "Accessories"
+      },
+      {
+        "feature": "Warranty",
+        "details": "1 Year"
+      }
+    ]
   },
   {
     "id": 5,
-    "name": "Luminar LED Desk Lamp",
-    "price": 1899,
-    "description": "Adjustable LED desk lamp with multiple brightness levels and color temperatures for optimal lighting in any setting.",
+    "name": "Luminar Lamp",
+    "price": 4321,
+    "description": "High-quality home product.",
     "image": "/images/luminar-lamp.avif",
+    "images": [
+      "/images/luminar-lamp.avif"
+    ],
     "category": "Home",
-    "rating": 4.4,
+    "rating": 4.6,
     "inStock": true,
-    "sale": true
+    "sale": false,
+    "keyFeatures": [
+      "Elegant design",
+      "Durable material",
+      "Easy to maintain",
+      "Perfect for daily use",
+      "Adds warmth to any room"
+    ],
+    "specifications": [
+      {
+        "feature": "Product Name",
+        "details": "Luminar Lamp"
+      },
+      {
+        "feature": "Material",
+        "details": "Varies by product"
+      },
+      {
+        "feature": "Dimensions",
+        "details": "As per product"
+      },
+      {
+        "feature": "Care",
+        "details": "Wipe clean / Machine wash"
+      },
+      {
+        "feature": "Color Options",
+        "details": "Multiple"
+      },
+      {
+        "feature": "Warranty",
+        "details": "1 Year (if applicable)"
+      }
+    ]
   },
   {
     "id": 6,
-    "name": "ScentScape Aromatherapy Candles",
-    "price": 799,
-    "description": "Hand-poured soy candles with natural essential oils for relaxation and ambiance, available in various scents.",
+    "name": "Scentscape Candles",
+    "price": 2421,
+    "description": "High-quality clothing product.",
     "image": "/images/scentscape-candles.avif",
-    "category": "Home",
-    "rating": 4.9,
+    "images": [
+      "/images/scentscape-candles.avif"
+    ],
+    "category": "Clothing",
+    "rating": 4.8,
     "inStock": true,
-    "sale": false
+    "sale": false,
+    "keyFeatures": [
+      "Premium fabric",
+      "Comfortable fit",
+      "Machine washable",
+      "Breathable material",
+      "Stylish design"
+    ],
+    "specifications": [
+      {
+        "feature": "Product Name",
+        "details": "Scentscape Candles"
+      },
+      {
+        "feature": "Material",
+        "details": "Cotton / Polyester Blend"
+      },
+      {
+        "feature": "Fit",
+        "details": "Regular / Slim / Oversized"
+      },
+      {
+        "feature": "Sizes",
+        "details": "S, M, L, XL, XXL"
+      },
+      {
+        "feature": "Care",
+        "details": "Machine Wash Cold"
+      },
+      {
+        "feature": "Warranty",
+        "details": "None (Fashion Item)"
+      }
+    ]
   },
   {
     "id": 7,
-    "name": "Serenity Throw Blanket",
-    "price": 1299,
-    "description": "Ultra-soft throw blanket perfect for cozy evenings, featuring premium fleece material and stylish patterns.",
+    "name": "Serenity Throw",
+    "price": 9932,
+    "description": "High-quality sports product.",
     "image": "/images/serenity-throw.avif",
-    "category": "Home",
-    "rating": 4.7,
+    "images": [
+      "/images/serenity-throw.avif"
+    ],
+    "category": "Sports",
+    "rating": 4.1,
     "inStock": true,
-    "sale": true
+    "sale": true,
+    "keyFeatures": [
+      "High-quality product",
+      "Durable and reliable",
+      "Great value"
+    ],
+    "specifications": [
+      {
+        "feature": "Product Name",
+        "details": "Serenity Throw"
+      },
+      {
+        "feature": "Category",
+        "details": "Sports"
+      },
+      {
+        "feature": "Warranty",
+        "details": "1 Year"
+      }
+    ]
   },
   {
     "id": 8,
-    "name": "Zenith Leather Wallet",
-    "price": 2199,
-    "description": "Slim leather wallet with RFID protection, multiple card slots, and a dedicated cash compartment for organized essentials.",
+    "name": "Zenith Wallet",
+    "price": 9946,
+    "description": "High-quality furniture product.",
     "image": "/images/zenith-wallet.avif",
-    "category": "Accessories",
-    "rating": 4.6,
+    "images": [
+      "/images/zenith-wallet.avif"
+    ],
+    "category": "Furniture",
+    "rating": 4,
     "inStock": true,
-    "sale": false
+    "sale": true,
+    "keyFeatures": [
+      "Ergonomic design",
+      "Sturdy construction",
+      "Easy assembly",
+      "Space-saving",
+      "Modern aesthetic"
+    ],
+    "specifications": [
+      {
+        "feature": "Product Name",
+        "details": "Zenith Wallet"
+      },
+      {
+        "feature": "Material",
+        "details": "Wood / Metal / Fabric"
+      },
+      {
+        "feature": "Weight Capacity",
+        "details": "100-150kg"
+      },
+      {
+        "feature": "Dimensions",
+        "details": "As per product"
+      },
+      {
+        "feature": "Color Options",
+        "details": "Natural, Black, Gray"
+      },
+      {
+        "feature": "Warranty",
+        "details": "2 Years"
+      }
+    ]
   },
   {
     "id": 9,
-    "name": "StreamLine Wireless Mouse",
-    "price": 899,
-    "description": "Ergonomic wireless mouse with customizable buttons and high-precision sensor for seamless computer navigation.",
+    "name": "Auraflow Headphones",
+    "price": 2640,
+    "description": "High-quality accessories product.",
     "image": "/images/auraflow-headphones.avif",
-    "category": "Electronics",
-    "rating": 4.5,
+    "images": [
+      "/images/auraflow-headphones.avif"
+    ],
+    "category": "Accessories",
+    "rating": 4,
     "inStock": true,
-    "sale": true
+    "sale": true,
+    "keyFeatures": [
+      "High-quality product",
+      "Durable and reliable",
+      "Great value"
+    ],
+    "specifications": [
+      {
+        "feature": "Product Name",
+        "details": "Auraflow Headphones"
+      },
+      {
+        "feature": "Category",
+        "details": "Accessories"
+      },
+      {
+        "feature": "Warranty",
+        "details": "1 Year"
+      }
+    ]
   },
   {
     "id": 10,
-    "name": "CloudComfort Memory Foam Pillow",
-    "price": 1599,
-    "description": "Contour memory foam pillow designed to provide optimal neck and head support for restful sleep.",
+    "name": "Chronofit Watch",
+    "price": 8327,
+    "description": "High-quality clothing product.",
     "image": "/images/chronofit-watch.avif",
-    "category": "Home",
-    "rating": 4.8,
+    "images": [
+      "/images/chronofit-watch.avif"
+    ],
+    "category": "Clothing",
+    "rating": 4.7,
     "inStock": true,
-    "sale": false
+    "sale": false,
+    "keyFeatures": [
+      "Premium fabric",
+      "Comfortable fit",
+      "Machine washable",
+      "Breathable material",
+      "Stylish design"
+    ],
+    "specifications": [
+      {
+        "feature": "Product Name",
+        "details": "Chronofit Watch"
+      },
+      {
+        "feature": "Material",
+        "details": "Cotton / Polyester Blend"
+      },
+      {
+        "feature": "Fit",
+        "details": "Regular / Slim / Oversized"
+      },
+      {
+        "feature": "Sizes",
+        "details": "S, M, L, XL, XXL"
+      },
+      {
+        "feature": "Care",
+        "details": "Machine Wash Cold"
+      },
+      {
+        "feature": "Warranty",
+        "details": "None (Fashion Item)"
+      }
+    ]
   },
   {
     "id": 11,
-    "name": "VistaPro DSLR Camera",
-    "price": 12499,
-    "description": "Professional-grade DSLR camera with interchangeable lenses, manual controls, and 4K video recording capability.",
+    "name": "Ergoglide Chair",
+    "price": 6601,
+    "description": "High-quality electronics product.",
     "image": "/images/ergoglide-chair.avif",
+    "images": [
+      "/images/ergoglide-chair.avif"
+    ],
     "category": "Electronics",
-    "rating": 4.7,
+    "rating": 4.5,
     "inStock": true,
-    "sale": true
+    "sale": true,
+    "keyFeatures": [
+      "Modern design",
+      "Energy efficient",
+      "Easy to use",
+      "Durable build quality",
+      "Compatible with latest devices"
+    ],
+    "specifications": [
+      {
+        "feature": "Product Name",
+        "details": "Ergoglide Chair"
+      },
+      {
+        "feature": "Input",
+        "details": "USB-C / 5V"
+      },
+      {
+        "feature": "Material",
+        "details": "ABS Plastic"
+      },
+      {
+        "feature": "Dimensions",
+        "details": "Varies by model"
+      },
+      {
+        "feature": "Color Options",
+        "details": "Black, Silver"
+      },
+      {
+        "feature": "Warranty",
+        "details": "1 Year"
+      }
+    ]
   },
   {
     "id": 12,
-    "name": "UrbanTrek Backpack",
-    "price": 2799,
-    "description": "Durable backpack with laptop compartment, water bottle holders, and multiple organizational pockets for daily adventures.",
+    "name": "Essential Tee",
+    "price": 8653,
+    "description": "High-quality audio product.",
     "image": "/images/essential-tee.avif",
-    "category": "Accessories",
-    "rating": 4.6,
+    "images": [
+      "/images/essential-tee.avif"
+    ],
+    "category": "Audio",
+    "rating": 4.3,
     "inStock": true,
-    "sale": false
+    "sale": false,
+    "keyFeatures": [
+      "High-fidelity sound",
+      "Comfortable over-ear design",
+      "Long battery life",
+      "Bluetooth 5.3 connectivity",
+      "Built-in microphone"
+    ],
+    "specifications": [
+      {
+        "feature": "Product Name",
+        "details": "Essential Tee"
+      },
+      {
+        "feature": "Driver Size",
+        "details": "40mm"
+      },
+      {
+        "feature": "Battery Life",
+        "details": "Up to 30 hours"
+      },
+      {
+        "feature": "Connectivity",
+        "details": "Bluetooth 5.3"
+      },
+      {
+        "feature": "Color Options",
+        "details": "Black, White, Blue"
+      },
+      {
+        "feature": "Warranty",
+        "details": "1 Year"
+      }
+    ]
   },
   {
     "id": 13,
-    "name": "BrewMaster Coffee Maker",
-    "price": 3499,
-    "description": "Programmable coffee maker with thermal carafe, auto-shutoff, and brew strength control for perfect coffee every time.",
+    "name": "Luminar Lamp",
+    "price": 3439,
+    "description": "High-quality home product.",
     "image": "/images/luminar-lamp.avif",
+    "images": [
+      "/images/luminar-lamp.avif"
+    ],
     "category": "Home",
-    "rating": 4.5,
+    "rating": 4.1,
     "inStock": true,
-    "sale": true
+    "sale": true,
+    "keyFeatures": [
+      "Elegant design",
+      "Durable material",
+      "Easy to maintain",
+      "Perfect for daily use",
+      "Adds warmth to any room"
+    ],
+    "specifications": [
+      {
+        "feature": "Product Name",
+        "details": "Luminar Lamp"
+      },
+      {
+        "feature": "Material",
+        "details": "Varies by product"
+      },
+      {
+        "feature": "Dimensions",
+        "details": "As per product"
+      },
+      {
+        "feature": "Care",
+        "details": "Wipe clean / Machine wash"
+      },
+      {
+        "feature": "Color Options",
+        "details": "Multiple"
+      },
+      {
+        "feature": "Warranty",
+        "details": "1 Year (if applicable)"
+      }
+    ]
   },
   {
     "id": 14,
-    "name": "FlexiGrip Yoga Mat",
-    "price": 1199,
-    "description": "Non-slip yoga mat with extra cushioning for joint protection and alignment markers for proper posture.",
+    "name": "Scentscape Candles",
+    "price": 8730,
+    "description": "High-quality furniture product.",
     "image": "/images/scentscape-candles.avif",
-    "category": "Sports",
-    "rating": 4.7,
+    "images": [
+      "/images/scentscape-candles.avif"
+    ],
+    "category": "Furniture",
+    "rating": 4.8,
     "inStock": true,
-    "sale": false
+    "sale": false,
+    "keyFeatures": [
+      "Ergonomic design",
+      "Sturdy construction",
+      "Easy assembly",
+      "Space-saving",
+      "Modern aesthetic"
+    ],
+    "specifications": [
+      {
+        "feature": "Product Name",
+        "details": "Scentscape Candles"
+      },
+      {
+        "feature": "Material",
+        "details": "Wood / Metal / Fabric"
+      },
+      {
+        "feature": "Weight Capacity",
+        "details": "100-150kg"
+      },
+      {
+        "feature": "Dimensions",
+        "details": "As per product"
+      },
+      {
+        "feature": "Color Options",
+        "details": "Natural, Black, Gray"
+      },
+      {
+        "feature": "Warranty",
+        "details": "2 Years"
+      }
+    ]
   },
   {
     "id": 15,
-    "name": "NaturaCalm Essential Oil Diffuser",
-    "price": 1399,
-    "description": "Ultrasonic diffuser that disperses essential oils into the air while providing ambient lighting for relaxation.",
+    "name": "Serenity Throw",
+    "price": 2453,
+    "description": "High-quality home product.",
     "image": "/images/serenity-throw.avif",
+    "images": [
+      "/images/serenity-throw.avif"
+    ],
     "category": "Home",
     "rating": 4.8,
     "inStock": true,
-    "sale": true
+    "sale": false,
+    "keyFeatures": [
+      "Elegant design",
+      "Durable material",
+      "Easy to maintain",
+      "Perfect for daily use",
+      "Adds warmth to any room"
+    ],
+    "specifications": [
+      {
+        "feature": "Product Name",
+        "details": "Serenity Throw"
+      },
+      {
+        "feature": "Material",
+        "details": "Varies by product"
+      },
+      {
+        "feature": "Dimensions",
+        "details": "As per product"
+      },
+      {
+        "feature": "Care",
+        "details": "Wipe clean / Machine wash"
+      },
+      {
+        "feature": "Color Options",
+        "details": "Multiple"
+      },
+      {
+        "feature": "Warranty",
+        "details": "1 Year (if applicable)"
+      }
+    ]
   },
   {
     "id": 16,
-    "name": "SwiftCharge Power Bank",
-    "price": 1699,
-    "description": "High-capacity power bank with fast charging technology and dual USB ports for charging multiple devices simultaneously.",
+    "name": "Zenith Wallet",
+    "price": 2078,
+    "description": "High-quality clothing product.",
     "image": "/images/zenith-wallet.avif",
-    "category": "Electronics",
-    "rating": 4.6,
+    "images": [
+      "/images/zenith-wallet.avif"
+    ],
+    "category": "Clothing",
+    "rating": 4.9,
     "inStock": true,
-    "sale": false
+    "sale": false,
+    "keyFeatures": [
+      "Premium fabric",
+      "Comfortable fit",
+      "Machine washable",
+      "Breathable material",
+      "Stylish design"
+    ],
+    "specifications": [
+      {
+        "feature": "Product Name",
+        "details": "Zenith Wallet"
+      },
+      {
+        "feature": "Material",
+        "details": "Cotton / Polyester Blend"
+      },
+      {
+        "feature": "Fit",
+        "details": "Regular / Slim / Oversized"
+      },
+      {
+        "feature": "Sizes",
+        "details": "S, M, L, XL, XXL"
+      },
+      {
+        "feature": "Care",
+        "details": "Machine Wash Cold"
+      },
+      {
+        "feature": "Warranty",
+        "details": "None (Fashion Item)"
+      }
+    ]
   },
   {
     "id": 17,
-    "name": "CozyKnit Beanie",
-    "price": 599,
-    "description": "Warm, stretchy beanie made from premium acrylic blend, perfect for cold weather and casual styling.",
+    "name": "Auraflow Headphones",
+    "price": 891,
+    "description": "High-quality clothing product.",
     "image": "/images/auraflow-headphones.avif",
+    "images": [
+      "/images/auraflow-headphones.avif"
+    ],
     "category": "Clothing",
-    "rating": 4.5,
+    "rating": 4.9,
     "inStock": true,
-    "sale": true
+    "sale": true,
+    "keyFeatures": [
+      "Premium fabric",
+      "Comfortable fit",
+      "Machine washable",
+      "Breathable material",
+      "Stylish design"
+    ],
+    "specifications": [
+      {
+        "feature": "Product Name",
+        "details": "Auraflow Headphones"
+      },
+      {
+        "feature": "Material",
+        "details": "Cotton / Polyester Blend"
+      },
+      {
+        "feature": "Fit",
+        "details": "Regular / Slim / Oversized"
+      },
+      {
+        "feature": "Sizes",
+        "details": "S, M, L, XL, XXL"
+      },
+      {
+        "feature": "Care",
+        "details": "Machine Wash Cold"
+      },
+      {
+        "feature": "Warranty",
+        "details": "None (Fashion Item)"
+      }
+    ]
   },
   {
     "id": 18,
-    "name": "AeroLite Bluetooth Speaker",
-    "price": 2199,
-    "description": "Portable Bluetooth speaker with 360-degree sound, waterproof design, and up to 12 hours of battery life.",
+    "name": "Chronofit Watch",
+    "price": 8030,
+    "description": "High-quality clothing product.",
     "image": "/images/chronofit-watch.avif",
-    "category": "Audio",
-    "rating": 4.7,
+    "images": [
+      "/images/chronofit-watch.avif"
+    ],
+    "category": "Clothing",
+    "rating": 4.2,
     "inStock": true,
-    "sale": false
+    "sale": false,
+    "keyFeatures": [
+      "Premium fabric",
+      "Comfortable fit",
+      "Machine washable",
+      "Breathable material",
+      "Stylish design"
+    ],
+    "specifications": [
+      {
+        "feature": "Product Name",
+        "details": "Chronofit Watch"
+      },
+      {
+        "feature": "Material",
+        "details": "Cotton / Polyester Blend"
+      },
+      {
+        "feature": "Fit",
+        "details": "Regular / Slim / Oversized"
+      },
+      {
+        "feature": "Sizes",
+        "details": "S, M, L, XL, XXL"
+      },
+      {
+        "feature": "Care",
+        "details": "Machine Wash Cold"
+      },
+      {
+        "feature": "Warranty",
+        "details": "None (Fashion Item)"
+      }
+    ]
   },
   {
     "id": 19,
-    "name": "SmartGlow LED Light Strip",
-    "price": 1899,
-    "description": "Color-changing LED light strip with remote control, app compatibility, and music sync features for customizable ambiance.",
+    "name": "Ergoglide Chair",
+    "price": 9310,
+    "description": "High-quality audio product.",
     "image": "/images/ergoglide-chair.avif",
-    "category": "Home",
-    "rating": 4.6,
+    "images": [
+      "/images/ergoglide-chair.avif"
+    ],
+    "category": "Audio",
+    "rating": 4.1,
     "inStock": true,
-    "sale": true
+    "sale": false,
+    "keyFeatures": [
+      "High-fidelity sound",
+      "Comfortable over-ear design",
+      "Long battery life",
+      "Bluetooth 5.3 connectivity",
+      "Built-in microphone"
+    ],
+    "specifications": [
+      {
+        "feature": "Product Name",
+        "details": "Ergoglide Chair"
+      },
+      {
+        "feature": "Driver Size",
+        "details": "40mm"
+      },
+      {
+        "feature": "Battery Life",
+        "details": "Up to 30 hours"
+      },
+      {
+        "feature": "Connectivity",
+        "details": "Bluetooth 5.3"
+      },
+      {
+        "feature": "Color Options",
+        "details": "Black, White, Blue"
+      },
+      {
+        "feature": "Warranty",
+        "details": "1 Year"
+      }
+    ]
   },
   {
     "id": 20,
-    "name": "PureBrew Tea Set",
-    "price": 2999,
-    "description": "Complete tea set including teapot, cups, saucers, and infuser, crafted from premium ceramic for elegant tea service.",
+    "name": "Essential Tee",
+    "price": 4248,
+    "description": "High-quality clothing product.",
     "image": "/images/essential-tee.avif",
-    "category": "Home",
-    "rating": 4.8,
+    "images": [
+      "/images/essential-tee.avif"
+    ],
+    "category": "Clothing",
+    "rating": 5,
     "inStock": true,
-    "sale": false
+    "sale": false,
+    "keyFeatures": [
+      "Premium fabric",
+      "Comfortable fit",
+      "Machine washable",
+      "Breathable material",
+      "Stylish design"
+    ],
+    "specifications": [
+      {
+        "feature": "Product Name",
+        "details": "Essential Tee"
+      },
+      {
+        "feature": "Material",
+        "details": "Cotton / Polyester Blend"
+      },
+      {
+        "feature": "Fit",
+        "details": "Regular / Slim / Oversized"
+      },
+      {
+        "feature": "Sizes",
+        "details": "S, M, L, XL, XXL"
+      },
+      {
+        "feature": "Care",
+        "details": "Machine Wash Cold"
+      },
+      {
+        "feature": "Warranty",
+        "details": "None (Fashion Item)"
+      }
+    ]
   },
   {
     "id": 21,
-    "name": "TechGuard Phone Case",
-    "price": 799,
-    "description": "Military-grade drop protection phone case with slim profile, precise cutouts, and non-slip grip for maximum protection.",
+    "name": "Luminar Lamp",
+    "price": 4162,
+    "description": "High-quality audio product.",
     "image": "/images/luminar-lamp.avif",
-    "category": "Accessories",
-    "rating": 4.5,
+    "images": [
+      "/images/luminar-lamp.avif"
+    ],
+    "category": "Audio",
+    "rating": 5,
     "inStock": true,
-    "sale": true
+    "sale": false,
+    "keyFeatures": [
+      "High-fidelity sound",
+      "Comfortable over-ear design",
+      "Long battery life",
+      "Bluetooth 5.3 connectivity",
+      "Built-in microphone"
+    ],
+    "specifications": [
+      {
+        "feature": "Product Name",
+        "details": "Luminar Lamp"
+      },
+      {
+        "feature": "Driver Size",
+        "details": "40mm"
+      },
+      {
+        "feature": "Battery Life",
+        "details": "Up to 30 hours"
+      },
+      {
+        "feature": "Connectivity",
+        "details": "Bluetooth 5.3"
+      },
+      {
+        "feature": "Color Options",
+        "details": "Black, White, Blue"
+      },
+      {
+        "feature": "Warranty",
+        "details": "1 Year"
+      }
+    ]
   },
   {
     "id": 22,
-    "name": "AirFlow Humidifier",
-    "price": 3299,
-    "description": "Ultrasonic humidifier with large water tank, adjustable mist output, and quiet operation for comfortable indoor air quality.",
+    "name": "Scentscape Candles",
+    "price": 9364,
+    "description": "High-quality home product.",
     "image": "/images/scentscape-candles.avif",
+    "images": [
+      "/images/scentscape-candles.avif"
+    ],
     "category": "Home",
-    "rating": 4.7,
+    "rating": 4.8,
     "inStock": true,
-    "sale": false
+    "sale": false,
+    "keyFeatures": [
+      "Elegant design",
+      "Durable material",
+      "Easy to maintain",
+      "Perfect for daily use",
+      "Adds warmth to any room"
+    ],
+    "specifications": [
+      {
+        "feature": "Product Name",
+        "details": "Scentscape Candles"
+      },
+      {
+        "feature": "Material",
+        "details": "Varies by product"
+      },
+      {
+        "feature": "Dimensions",
+        "details": "As per product"
+      },
+      {
+        "feature": "Care",
+        "details": "Wipe clean / Machine wash"
+      },
+      {
+        "feature": "Color Options",
+        "details": "Multiple"
+      },
+      {
+        "feature": "Warranty",
+        "details": "1 Year (if applicable)"
+      }
+    ]
   },
   {
     "id": 23,
-    "name": "SportFlex Resistance Bands",
-    "price": 999,
-    "description": "Set of resistance bands with varying tension levels for strength training, rehabilitation, and flexibility exercises.",
+    "name": "Serenity Throw",
+    "price": 1989,
+    "description": "High-quality pets product.",
     "image": "/images/serenity-throw.avif",
-    "category": "Sports",
-    "rating": 4.6,
-    "inStock": true,
-    "sale": true
-  },
-  {
-    "id": 24,
-    "name": "GourmetGrill BBQ Tool Set",
-    "price": 1799,
-    "description": "Complete BBQ tool set including tongs, spatula, brush, and fork, made from stainless steel with wooden handles.",
-    "image": "/images/zenith-wallet.avif",
-    "category": "Home",
-    "rating": 4.6,
-    "inStock": true,
-    "sale": false
-  },
-  {
-    "id": 25,
-    "name": "NovaLight Table Lamp",
-    "price": 1499,
-    "description": "Modern table lamp with touch-sensitive controls and adjustable brightness for reading or ambient lighting.",
-    "image": "/images/auraflow-headphones.avif",
-    "category": "Home",
-    "rating": 4.5,
-    "inStock": true,
-    "sale": true
-  },
-  {
-    "id": 26,
-    "name": "FitTrack Fitness Tracker",
-    "price": 1999,
-    "description": "Water-resistant fitness tracker with heart rate monitor, step counter, and sleep analysis for comprehensive health tracking.",
-    "image": "/images/chronofit-watch.avif",
-    "category": "Electronics",
-    "rating": 4.7,
-    "inStock": true,
-    "sale": false
-  },
-  {
-    "id": 27,
-    "name": "ComfyCloud Bedding Set",
-    "price": 3899,
-    "description": "Luxury bedding set with ultra-soft sheets, duvet cover, and pillowcases for a hotel-quality sleep experience.",
-    "image": "/images/ergoglide-chair.avif",
-    "category": "Home",
-    "rating": 4.8,
-    "inStock": true,
-    "sale": true
-  },
-  {
-    "id": 28,
-    "name": "QuickDry Sports Towel",
-    "price": 699,
-    "description": "Compact, quick-drying sports towel with antimicrobial properties, perfect for gym, beach, or travel.",
-    "image": "/images/essential-tee.avif",
-    "category": "Sports",
-    "rating": 4.6,
-    "inStock": true,
-    "sale": false
-  },
-  {
-    "id": 29,
-    "name": "EchoMax Portable Speaker",
-    "price": 2599,
-    "description": "High-fidelity portable speaker with deep bass, clear highs, and long battery life for outdoor gatherings.",
-    "image": "/images/luminar-lamp.avif",
-    "category": "Audio",
-    "rating": 4.7,
-    "inStock": true,
-    "sale": true
-  },
-  {
-    "id": 30,
-    "name": "EcoBrew Reusable Coffee Cups",
-    "price": 899,
-    "description": "Set of reusable coffee cups with leak-proof lids, perfect for on-the-go coffee lovers who care about the environment.",
-    "image": "/images/scentscape-candles.avif",
-    "category": "Home",
-    "rating": 4.5,
-    "inStock": true,
-    "sale": false
-  },
-  {
-    "id": 31,
-    "name": "DreamWeave Pillowcase Set",
-    "price": 999,
-    "description": "Silk-like pillowcase set that reduces hair frizz and prevents facial wrinkles while you sleep.",
-    "image": "/images/serenity-throw.avif",
-    "category": "Home",
-    "rating": 4.8,
-    "inStock": true,
-    "sale": true
-  },
-  {
-    "id": 32,
-    "name": "PowerGrip Car Charger",
-    "price": 599,
-    "description": "Dual USB car charger with fast charging technology and over-current protection for safe device charging on the go.",
-    "image": "/images/zenith-wallet.avif",
-    "category": "Electronics",
-    "rating": 4.6,
-    "inStock": true,
-    "sale": false
-  },
-  {
-    "id": 33,
-    "name": "StyleHaven Scarf Collection",
-    "price": 799,
-    "description": "Versatile scarf collection in various patterns and colors, perfect for adding style to any outfit.",
-    "image": "/images/auraflow-headphones.avif",
-    "category": "Clothing",
-    "rating": 4.5,
-    "inStock": true,
-    "sale": true
-  },
-  {
-    "id": 34,
-    "name": "SkyView Drone",
-    "price": 8999,
-    "description": "4K aerial drone with GPS stabilization, obstacle avoidance, and intelligent flight modes for stunning photography.",
-    "image": "/images/chronofit-watch.avif",
-    "category": "Electronics",
-    "rating": 4.7,
-    "inStock": true,
-    "sale": false
-  },
-  {
-    "id": 35,
-    "name": "MoodLight Smart Bulbs",
-    "price": 1299,
-    "description": "Color-changing smart bulbs controlled via app or voice assistant, with scheduling and scene creation features.",
-    "image": "/images/ergoglide-chair.avif",
-    "category": "Home",
-    "rating": 4.6,
-    "inStock": true,
-    "sale": true
-  },
-  {
-    "id": 36,
-    "name": "TravelMate Luggage Set",
-    "price": 5999,
-    "description": "Complete luggage set with spinner wheels, expandable compartments, and TSA-approved locks for hassle-free travel.",
-    "image": "/images/essential-tee.avif",
-    "category": "Accessories",
-    "rating": 4.7,
-    "inStock": true,
-    "sale": false
-  },
-  {
-    "id": 37,
-    "name": "PureSip Water Bottle",
-    "price": 1199,
-    "description": "Insulated stainless steel water bottle with leak-proof lid, keeping drinks cold for 24 hours or hot for 12 hours.",
-    "image": "/images/luminar-lamp.avif",
-    "category": "Home",
-    "rating": 4.8,
-    "inStock": true,
-    "sale": true
-  },
-  {
-    "id": 38,
-    "name": "GamePad Pro Controller",
-    "price": 2899,
-    "description": "Wireless gaming controller with ergonomic design, programmable buttons, and low-latency connection for competitive gaming.",
-    "image": "/images/scentscape-candles.avif",
-    "category": "Electronics",
-    "rating": 4.6,
-    "inStock": true,
-    "sale": false
-  },
-  {
-    "id": 39,
-    "name": "ZenGarden Mini Fountain",
-    "price": 2499,
-    "description": "Desktop water fountain with LED lighting and soothing water sounds for creating a peaceful atmosphere.",
-    "image": "/images/serenity-throw.avif",
-    "category": "Home",
-    "rating": 4.7,
-    "inStock": true,
-    "sale": true
-  },
-  {
-    "id": 40,
-    "name": "MultiPort USB Hub",
-    "price": 1399,
-    "description": "USB hub with multiple ports for connecting peripherals, featuring fast data transfer and power delivery capabilities.",
-    "image": "/images/zenith-wallet.avif",
-    "category": "Electronics",
-    "rating": 4.5,
-    "inStock": true,
-    "sale": false
-  },
-  {
-    "id": 41,
-    "name": "ChillOut Cooling Pad",
-    "price": 1699,
-    "description": "Gel-infused cooling pad for laptops, preventing overheating during extended use and improving performance.",
-    "image": "/images/auraflow-headphones.avif",
-    "category": "Electronics",
-    "rating": 4.6,
-    "inStock": true,
-    "sale": true
-  },
-  {
-    "id": 42,
-    "name": "StyloNote Premium Notebook",
-    "price": 899,
-    "description": "High-quality notebook with thick paper, hardcover, and elastic closure for professional note-taking and journaling.",
-    "image": "/images/chronofit-watch.avif",
-    "category": "Home",
-    "rating": 4.5,
-    "inStock": true,
-    "sale": false
-  },
-  {
-    "id": 43,
-    "name": "PetPaws Dog Leash",
-    "price": 599,
-    "description": "Durable dog leash with padded handle, reflective stitching, and secure clip for safe walks with your furry friend.",
-    "image": "/images/ergoglide-chair.avif",
+    "images": [
+      "/images/serenity-throw.avif"
+    ],
     "category": "Pets",
     "rating": 4.7,
     "inStock": true,
-    "sale": true
+    "sale": false,
+    "keyFeatures": [
+      "High-quality product",
+      "Durable and reliable",
+      "Great value"
+    ],
+    "specifications": [
+      {
+        "feature": "Product Name",
+        "details": "Serenity Throw"
+      },
+      {
+        "feature": "Category",
+        "details": "Pets"
+      },
+      {
+        "feature": "Warranty",
+        "details": "1 Year"
+      }
+    ]
+  },
+  {
+    "id": 24,
+    "name": "Zenith Wallet",
+    "price": 1099,
+    "description": "High-quality home product.",
+    "image": "/images/zenith-wallet.avif",
+    "images": [
+      "/images/zenith-wallet.avif"
+    ],
+    "category": "Home",
+    "rating": 4.8,
+    "inStock": true,
+    "sale": false,
+    "keyFeatures": [
+      "Elegant design",
+      "Durable material",
+      "Easy to maintain",
+      "Perfect for daily use",
+      "Adds warmth to any room"
+    ],
+    "specifications": [
+      {
+        "feature": "Product Name",
+        "details": "Zenith Wallet"
+      },
+      {
+        "feature": "Material",
+        "details": "Varies by product"
+      },
+      {
+        "feature": "Dimensions",
+        "details": "As per product"
+      },
+      {
+        "feature": "Care",
+        "details": "Wipe clean / Machine wash"
+      },
+      {
+        "feature": "Color Options",
+        "details": "Multiple"
+      },
+      {
+        "feature": "Warranty",
+        "details": "1 Year (if applicable)"
+      }
+    ]
+  },
+  {
+    "id": 25,
+    "name": "Auraflow Headphones",
+    "price": 4397,
+    "description": "High-quality furniture product.",
+    "image": "/images/auraflow-headphones.avif",
+    "images": [
+      "/images/auraflow-headphones.avif"
+    ],
+    "category": "Furniture",
+    "rating": 4.5,
+    "inStock": true,
+    "sale": false,
+    "keyFeatures": [
+      "Ergonomic design",
+      "Sturdy construction",
+      "Easy assembly",
+      "Space-saving",
+      "Modern aesthetic"
+    ],
+    "specifications": [
+      {
+        "feature": "Product Name",
+        "details": "Auraflow Headphones"
+      },
+      {
+        "feature": "Material",
+        "details": "Wood / Metal / Fabric"
+      },
+      {
+        "feature": "Weight Capacity",
+        "details": "100-150kg"
+      },
+      {
+        "feature": "Dimensions",
+        "details": "As per product"
+      },
+      {
+        "feature": "Color Options",
+        "details": "Natural, Black, Gray"
+      },
+      {
+        "feature": "Warranty",
+        "details": "2 Years"
+      }
+    ]
+  },
+  {
+    "id": 26,
+    "name": "Chronofit Watch",
+    "price": 6749,
+    "description": "High-quality clothing product.",
+    "image": "/images/chronofit-watch.avif",
+    "images": [
+      "/images/chronofit-watch.avif"
+    ],
+    "category": "Clothing",
+    "rating": 4.4,
+    "inStock": true,
+    "sale": true,
+    "keyFeatures": [
+      "Premium fabric",
+      "Comfortable fit",
+      "Machine washable",
+      "Breathable material",
+      "Stylish design"
+    ],
+    "specifications": [
+      {
+        "feature": "Product Name",
+        "details": "Chronofit Watch"
+      },
+      {
+        "feature": "Material",
+        "details": "Cotton / Polyester Blend"
+      },
+      {
+        "feature": "Fit",
+        "details": "Regular / Slim / Oversized"
+      },
+      {
+        "feature": "Sizes",
+        "details": "S, M, L, XL, XXL"
+      },
+      {
+        "feature": "Care",
+        "details": "Machine Wash Cold"
+      },
+      {
+        "feature": "Warranty",
+        "details": "None (Fashion Item)"
+      }
+    ]
+  },
+  {
+    "id": 27,
+    "name": "Ergoglide Chair",
+    "price": 6597,
+    "description": "High-quality accessories product.",
+    "image": "/images/ergoglide-chair.avif",
+    "images": [
+      "/images/ergoglide-chair.avif"
+    ],
+    "category": "Accessories",
+    "rating": 4.8,
+    "inStock": true,
+    "sale": true,
+    "keyFeatures": [
+      "High-quality product",
+      "Durable and reliable",
+      "Great value"
+    ],
+    "specifications": [
+      {
+        "feature": "Product Name",
+        "details": "Ergoglide Chair"
+      },
+      {
+        "feature": "Category",
+        "details": "Accessories"
+      },
+      {
+        "feature": "Warranty",
+        "details": "1 Year"
+      }
+    ]
+  },
+  {
+    "id": 28,
+    "name": "Essential Tee",
+    "price": 3080,
+    "description": "High-quality home product.",
+    "image": "/images/essential-tee.avif",
+    "images": [
+      "/images/essential-tee.avif"
+    ],
+    "category": "Home",
+    "rating": 4.3,
+    "inStock": true,
+    "sale": true,
+    "keyFeatures": [
+      "Elegant design",
+      "Durable material",
+      "Easy to maintain",
+      "Perfect for daily use",
+      "Adds warmth to any room"
+    ],
+    "specifications": [
+      {
+        "feature": "Product Name",
+        "details": "Essential Tee"
+      },
+      {
+        "feature": "Material",
+        "details": "Varies by product"
+      },
+      {
+        "feature": "Dimensions",
+        "details": "As per product"
+      },
+      {
+        "feature": "Care",
+        "details": "Wipe clean / Machine wash"
+      },
+      {
+        "feature": "Color Options",
+        "details": "Multiple"
+      },
+      {
+        "feature": "Warranty",
+        "details": "1 Year (if applicable)"
+      }
+    ]
+  },
+  {
+    "id": 29,
+    "name": "Luminar Lamp",
+    "price": 6218,
+    "description": "High-quality home product.",
+    "image": "/images/luminar-lamp.avif",
+    "images": [
+      "/images/luminar-lamp.avif"
+    ],
+    "category": "Home",
+    "rating": 4.2,
+    "inStock": false,
+    "sale": false,
+    "keyFeatures": [
+      "Elegant design",
+      "Durable material",
+      "Easy to maintain",
+      "Perfect for daily use",
+      "Adds warmth to any room"
+    ],
+    "specifications": [
+      {
+        "feature": "Product Name",
+        "details": "Luminar Lamp"
+      },
+      {
+        "feature": "Material",
+        "details": "Varies by product"
+      },
+      {
+        "feature": "Dimensions",
+        "details": "As per product"
+      },
+      {
+        "feature": "Care",
+        "details": "Wipe clean / Machine wash"
+      },
+      {
+        "feature": "Color Options",
+        "details": "Multiple"
+      },
+      {
+        "feature": "Warranty",
+        "details": "1 Year (if applicable)"
+      }
+    ]
+  },
+  {
+    "id": 30,
+    "name": "Scentscape Candles",
+    "price": 5545,
+    "description": "High-quality accessories product.",
+    "image": "/images/scentscape-candles.avif",
+    "images": [
+      "/images/scentscape-candles.avif"
+    ],
+    "category": "Accessories",
+    "rating": 4.3,
+    "inStock": true,
+    "sale": true,
+    "keyFeatures": [
+      "High-quality product",
+      "Durable and reliable",
+      "Great value"
+    ],
+    "specifications": [
+      {
+        "feature": "Product Name",
+        "details": "Scentscape Candles"
+      },
+      {
+        "feature": "Category",
+        "details": "Accessories"
+      },
+      {
+        "feature": "Warranty",
+        "details": "1 Year"
+      }
+    ]
+  },
+  {
+    "id": 31,
+    "name": "Serenity Throw",
+    "price": 6848,
+    "description": "High-quality audio product.",
+    "image": "/images/serenity-throw.avif",
+    "images": [
+      "/images/serenity-throw.avif"
+    ],
+    "category": "Audio",
+    "rating": 4.3,
+    "inStock": true,
+    "sale": false,
+    "keyFeatures": [
+      "High-fidelity sound",
+      "Comfortable over-ear design",
+      "Long battery life",
+      "Bluetooth 5.3 connectivity",
+      "Built-in microphone"
+    ],
+    "specifications": [
+      {
+        "feature": "Product Name",
+        "details": "Serenity Throw"
+      },
+      {
+        "feature": "Driver Size",
+        "details": "40mm"
+      },
+      {
+        "feature": "Battery Life",
+        "details": "Up to 30 hours"
+      },
+      {
+        "feature": "Connectivity",
+        "details": "Bluetooth 5.3"
+      },
+      {
+        "feature": "Color Options",
+        "details": "Black, White, Blue"
+      },
+      {
+        "feature": "Warranty",
+        "details": "1 Year"
+      }
+    ]
+  },
+  {
+    "id": 32,
+    "name": "Zenith Wallet",
+    "price": 4903,
+    "description": "High-quality furniture product.",
+    "image": "/images/zenith-wallet.avif",
+    "images": [
+      "/images/zenith-wallet.avif"
+    ],
+    "category": "Furniture",
+    "rating": 5,
+    "inStock": true,
+    "sale": false,
+    "keyFeatures": [
+      "Ergonomic design",
+      "Sturdy construction",
+      "Easy assembly",
+      "Space-saving",
+      "Modern aesthetic"
+    ],
+    "specifications": [
+      {
+        "feature": "Product Name",
+        "details": "Zenith Wallet"
+      },
+      {
+        "feature": "Material",
+        "details": "Wood / Metal / Fabric"
+      },
+      {
+        "feature": "Weight Capacity",
+        "details": "100-150kg"
+      },
+      {
+        "feature": "Dimensions",
+        "details": "As per product"
+      },
+      {
+        "feature": "Color Options",
+        "details": "Natural, Black, Gray"
+      },
+      {
+        "feature": "Warranty",
+        "details": "2 Years"
+      }
+    ]
+  },
+  {
+    "id": 33,
+    "name": "Auraflow Headphones",
+    "price": 2299,
+    "description": "High-quality home product.",
+    "image": "/images/auraflow-headphones.avif",
+    "images": [
+      "/images/auraflow-headphones.avif"
+    ],
+    "category": "Home",
+    "rating": 4.4,
+    "inStock": true,
+    "sale": true,
+    "keyFeatures": [
+      "Elegant design",
+      "Durable material",
+      "Easy to maintain",
+      "Perfect for daily use",
+      "Adds warmth to any room"
+    ],
+    "specifications": [
+      {
+        "feature": "Product Name",
+        "details": "Auraflow Headphones"
+      },
+      {
+        "feature": "Material",
+        "details": "Varies by product"
+      },
+      {
+        "feature": "Dimensions",
+        "details": "As per product"
+      },
+      {
+        "feature": "Care",
+        "details": "Wipe clean / Machine wash"
+      },
+      {
+        "feature": "Color Options",
+        "details": "Multiple"
+      },
+      {
+        "feature": "Warranty",
+        "details": "1 Year (if applicable)"
+      }
+    ]
+  },
+  {
+    "id": 34,
+    "name": "Chronofit Watch",
+    "price": 2707,
+    "description": "High-quality accessories product.",
+    "image": "/images/chronofit-watch.avif",
+    "images": [
+      "/images/chronofit-watch.avif"
+    ],
+    "category": "Accessories",
+    "rating": 4.6,
+    "inStock": true,
+    "sale": false,
+    "keyFeatures": [
+      "High-quality product",
+      "Durable and reliable",
+      "Great value"
+    ],
+    "specifications": [
+      {
+        "feature": "Product Name",
+        "details": "Chronofit Watch"
+      },
+      {
+        "feature": "Category",
+        "details": "Accessories"
+      },
+      {
+        "feature": "Warranty",
+        "details": "1 Year"
+      }
+    ]
+  },
+  {
+    "id": 35,
+    "name": "Ergoglide Chair",
+    "price": 4960,
+    "description": "High-quality furniture product.",
+    "image": "/images/ergoglide-chair.avif",
+    "images": [
+      "/images/ergoglide-chair.avif"
+    ],
+    "category": "Furniture",
+    "rating": 4.9,
+    "inStock": true,
+    "sale": false,
+    "keyFeatures": [
+      "Ergonomic design",
+      "Sturdy construction",
+      "Easy assembly",
+      "Space-saving",
+      "Modern aesthetic"
+    ],
+    "specifications": [
+      {
+        "feature": "Product Name",
+        "details": "Ergoglide Chair"
+      },
+      {
+        "feature": "Material",
+        "details": "Wood / Metal / Fabric"
+      },
+      {
+        "feature": "Weight Capacity",
+        "details": "100-150kg"
+      },
+      {
+        "feature": "Dimensions",
+        "details": "As per product"
+      },
+      {
+        "feature": "Color Options",
+        "details": "Natural, Black, Gray"
+      },
+      {
+        "feature": "Warranty",
+        "details": "2 Years"
+      }
+    ]
+  },
+  {
+    "id": 36,
+    "name": "Essential Tee",
+    "price": 3655,
+    "description": "High-quality accessories product.",
+    "image": "/images/essential-tee.avif",
+    "images": [
+      "/images/essential-tee.avif"
+    ],
+    "category": "Accessories",
+    "rating": 4.1,
+    "inStock": false,
+    "sale": false,
+    "keyFeatures": [
+      "High-quality product",
+      "Durable and reliable",
+      "Great value"
+    ],
+    "specifications": [
+      {
+        "feature": "Product Name",
+        "details": "Essential Tee"
+      },
+      {
+        "feature": "Category",
+        "details": "Accessories"
+      },
+      {
+        "feature": "Warranty",
+        "details": "1 Year"
+      }
+    ]
+  },
+  {
+    "id": 37,
+    "name": "Luminar Lamp",
+    "price": 602,
+    "description": "High-quality clothing product.",
+    "image": "/images/luminar-lamp.avif",
+    "images": [
+      "/images/luminar-lamp.avif"
+    ],
+    "category": "Clothing",
+    "rating": 4.2,
+    "inStock": true,
+    "sale": false,
+    "keyFeatures": [
+      "Premium fabric",
+      "Comfortable fit",
+      "Machine washable",
+      "Breathable material",
+      "Stylish design"
+    ],
+    "specifications": [
+      {
+        "feature": "Product Name",
+        "details": "Luminar Lamp"
+      },
+      {
+        "feature": "Material",
+        "details": "Cotton / Polyester Blend"
+      },
+      {
+        "feature": "Fit",
+        "details": "Regular / Slim / Oversized"
+      },
+      {
+        "feature": "Sizes",
+        "details": "S, M, L, XL, XXL"
+      },
+      {
+        "feature": "Care",
+        "details": "Machine Wash Cold"
+      },
+      {
+        "feature": "Warranty",
+        "details": "None (Fashion Item)"
+      }
+    ]
+  },
+  {
+    "id": 38,
+    "name": "Scentscape Candles",
+    "price": 5911,
+    "description": "High-quality accessories product.",
+    "image": "/images/scentscape-candles.avif",
+    "images": [
+      "/images/scentscape-candles.avif"
+    ],
+    "category": "Accessories",
+    "rating": 4.7,
+    "inStock": true,
+    "sale": false,
+    "keyFeatures": [
+      "High-quality product",
+      "Durable and reliable",
+      "Great value"
+    ],
+    "specifications": [
+      {
+        "feature": "Product Name",
+        "details": "Scentscape Candles"
+      },
+      {
+        "feature": "Category",
+        "details": "Accessories"
+      },
+      {
+        "feature": "Warranty",
+        "details": "1 Year"
+      }
+    ]
+  },
+  {
+    "id": 39,
+    "name": "Serenity Throw",
+    "price": 1679,
+    "description": "High-quality pets product.",
+    "image": "/images/serenity-throw.avif",
+    "images": [
+      "/images/serenity-throw.avif"
+    ],
+    "category": "Pets",
+    "rating": 4.5,
+    "inStock": false,
+    "sale": false,
+    "keyFeatures": [
+      "High-quality product",
+      "Durable and reliable",
+      "Great value"
+    ],
+    "specifications": [
+      {
+        "feature": "Product Name",
+        "details": "Serenity Throw"
+      },
+      {
+        "feature": "Category",
+        "details": "Pets"
+      },
+      {
+        "feature": "Warranty",
+        "details": "1 Year"
+      }
+    ]
+  },
+  {
+    "id": 40,
+    "name": "Zenith Wallet",
+    "price": 1970,
+    "description": "High-quality furniture product.",
+    "image": "/images/zenith-wallet.avif",
+    "images": [
+      "/images/zenith-wallet.avif"
+    ],
+    "category": "Furniture",
+    "rating": 4.4,
+    "inStock": true,
+    "sale": false,
+    "keyFeatures": [
+      "Ergonomic design",
+      "Sturdy construction",
+      "Easy assembly",
+      "Space-saving",
+      "Modern aesthetic"
+    ],
+    "specifications": [
+      {
+        "feature": "Product Name",
+        "details": "Zenith Wallet"
+      },
+      {
+        "feature": "Material",
+        "details": "Wood / Metal / Fabric"
+      },
+      {
+        "feature": "Weight Capacity",
+        "details": "100-150kg"
+      },
+      {
+        "feature": "Dimensions",
+        "details": "As per product"
+      },
+      {
+        "feature": "Color Options",
+        "details": "Natural, Black, Gray"
+      },
+      {
+        "feature": "Warranty",
+        "details": "2 Years"
+      }
+    ]
+  },
+  {
+    "id": 41,
+    "name": "Auraflow Headphones",
+    "price": 7577,
+    "description": "High-quality accessories product.",
+    "image": "/images/auraflow-headphones.avif",
+    "images": [
+      "/images/auraflow-headphones.avif"
+    ],
+    "category": "Accessories",
+    "rating": 4.1,
+    "inStock": true,
+    "sale": false,
+    "keyFeatures": [
+      "High-quality product",
+      "Durable and reliable",
+      "Great value"
+    ],
+    "specifications": [
+      {
+        "feature": "Product Name",
+        "details": "Auraflow Headphones"
+      },
+      {
+        "feature": "Category",
+        "details": "Accessories"
+      },
+      {
+        "feature": "Warranty",
+        "details": "1 Year"
+      }
+    ]
+  },
+  {
+    "id": 42,
+    "name": "Chronofit Watch",
+    "price": 9250,
+    "description": "High-quality pets product.",
+    "image": "/images/chronofit-watch.avif",
+    "images": [
+      "/images/chronofit-watch.avif"
+    ],
+    "category": "Pets",
+    "rating": 5,
+    "inStock": true,
+    "sale": false,
+    "keyFeatures": [
+      "High-quality product",
+      "Durable and reliable",
+      "Great value"
+    ],
+    "specifications": [
+      {
+        "feature": "Product Name",
+        "details": "Chronofit Watch"
+      },
+      {
+        "feature": "Category",
+        "details": "Pets"
+      },
+      {
+        "feature": "Warranty",
+        "details": "1 Year"
+      }
+    ]
+  },
+  {
+    "id": 43,
+    "name": "Ergoglide Chair",
+    "price": 1344,
+    "description": "High-quality furniture product.",
+    "image": "/images/ergoglide-chair.avif",
+    "images": [
+      "/images/ergoglide-chair.avif"
+    ],
+    "category": "Furniture",
+    "rating": 4.1,
+    "inStock": false,
+    "sale": false,
+    "keyFeatures": [
+      "Ergonomic design",
+      "Sturdy construction",
+      "Easy assembly",
+      "Space-saving",
+      "Modern aesthetic"
+    ],
+    "specifications": [
+      {
+        "feature": "Product Name",
+        "details": "Ergoglide Chair"
+      },
+      {
+        "feature": "Material",
+        "details": "Wood / Metal / Fabric"
+      },
+      {
+        "feature": "Weight Capacity",
+        "details": "100-150kg"
+      },
+      {
+        "feature": "Dimensions",
+        "details": "As per product"
+      },
+      {
+        "feature": "Color Options",
+        "details": "Natural, Black, Gray"
+      },
+      {
+        "feature": "Warranty",
+        "details": "2 Years"
+      }
+    ]
   },
   {
     "id": 44,
-    "name": "EcoClean Reusable Bags",
-    "price": 399,
-    "description": "Set of reusable shopping bags made from recycled materials, foldable and compact for easy storage.",
+    "name": "Essential Tee",
+    "price": 3862,
+    "description": "High-quality home product.",
     "image": "/images/essential-tee.avif",
+    "images": [
+      "/images/essential-tee.avif"
+    ],
     "category": "Home",
-    "rating": 4.6,
+    "rating": 5,
     "inStock": true,
-    "sale": false
+    "sale": false,
+    "keyFeatures": [
+      "Elegant design",
+      "Durable material",
+      "Easy to maintain",
+      "Perfect for daily use",
+      "Adds warmth to any room"
+    ],
+    "specifications": [
+      {
+        "feature": "Product Name",
+        "details": "Essential Tee"
+      },
+      {
+        "feature": "Material",
+        "details": "Varies by product"
+      },
+      {
+        "feature": "Dimensions",
+        "details": "As per product"
+      },
+      {
+        "feature": "Care",
+        "details": "Wipe clean / Machine wash"
+      },
+      {
+        "feature": "Color Options",
+        "details": "Multiple"
+      },
+      {
+        "feature": "Warranty",
+        "details": "1 Year (if applicable)"
+      }
+    ]
   },
   {
     "id": 45,
-    "name": "FocusBeam Reading Glasses",
-    "price": 799,
-    "description": "Lightweight reading glasses with anti-glare coating and comfortable fit for extended reading sessions.",
+    "name": "Luminar Lamp",
+    "price": 7995,
+    "description": "High-quality furniture product.",
     "image": "/images/luminar-lamp.avif",
+    "images": [
+      "/images/luminar-lamp.avif"
+    ],
+    "category": "Furniture",
+    "rating": 4.8,
+    "inStock": false,
+    "sale": false,
+    "keyFeatures": [
+      "Ergonomic design",
+      "Sturdy construction",
+      "Easy assembly",
+      "Space-saving",
+      "Modern aesthetic"
+    ],
+    "specifications": [
+      {
+        "feature": "Product Name",
+        "details": "Luminar Lamp"
+      },
+      {
+        "feature": "Material",
+        "details": "Wood / Metal / Fabric"
+      },
+      {
+        "feature": "Weight Capacity",
+        "details": "100-150kg"
+      },
+      {
+        "feature": "Dimensions",
+        "details": "As per product"
+      },
+      {
+        "feature": "Color Options",
+        "details": "Natural, Black, Gray"
+      },
+      {
+        "feature": "Warranty",
+        "details": "2 Years"
+      }
+    ]
+  },
+  {
+    "id": 46,
+    "name": "Scentscape Candles",
+    "price": 6561,
+    "description": "High-quality home product.",
+    "image": "/images/scentscape-candles.avif",
+    "images": [
+      "/images/scentscape-candles.avif"
+    ],
+    "category": "Home",
+    "rating": 4.8,
+    "inStock": true,
+    "sale": false,
+    "keyFeatures": [
+      "Elegant design",
+      "Durable material",
+      "Easy to maintain",
+      "Perfect for daily use",
+      "Adds warmth to any room"
+    ],
+    "specifications": [
+      {
+        "feature": "Product Name",
+        "details": "Scentscape Candles"
+      },
+      {
+        "feature": "Material",
+        "details": "Varies by product"
+      },
+      {
+        "feature": "Dimensions",
+        "details": "As per product"
+      },
+      {
+        "feature": "Care",
+        "details": "Wipe clean / Machine wash"
+      },
+      {
+        "feature": "Color Options",
+        "details": "Multiple"
+      },
+      {
+        "feature": "Warranty",
+        "details": "1 Year (if applicable)"
+      }
+    ]
+  },
+  {
+    "id": 47,
+    "name": "Serenity Throw",
+    "price": 1571,
+    "description": "High-quality electronics product.",
+    "image": "/images/serenity-throw.avif",
+    "images": [
+      "/images/serenity-throw.avif"
+    ],
+    "category": "Electronics",
+    "rating": 4.1,
+    "inStock": true,
+    "sale": true,
+    "keyFeatures": [
+      "Modern design",
+      "Energy efficient",
+      "Easy to use",
+      "Durable build quality",
+      "Compatible with latest devices"
+    ],
+    "specifications": [
+      {
+        "feature": "Product Name",
+        "details": "Serenity Throw"
+      },
+      {
+        "feature": "Input",
+        "details": "USB-C / 5V"
+      },
+      {
+        "feature": "Material",
+        "details": "ABS Plastic"
+      },
+      {
+        "feature": "Dimensions",
+        "details": "Varies by model"
+      },
+      {
+        "feature": "Color Options",
+        "details": "Black, Silver"
+      },
+      {
+        "feature": "Warranty",
+        "details": "1 Year"
+      }
+    ]
+  },
+  {
+    "id": 48,
+    "name": "Zenith Wallet",
+    "price": 9293,
+    "description": "High-quality clothing product.",
+    "image": "/images/zenith-wallet.avif",
+    "images": [
+      "/images/zenith-wallet.avif"
+    ],
+    "category": "Clothing",
+    "rating": 4.7,
+    "inStock": true,
+    "sale": false,
+    "keyFeatures": [
+      "Premium fabric",
+      "Comfortable fit",
+      "Machine washable",
+      "Breathable material",
+      "Stylish design"
+    ],
+    "specifications": [
+      {
+        "feature": "Product Name",
+        "details": "Zenith Wallet"
+      },
+      {
+        "feature": "Material",
+        "details": "Cotton / Polyester Blend"
+      },
+      {
+        "feature": "Fit",
+        "details": "Regular / Slim / Oversized"
+      },
+      {
+        "feature": "Sizes",
+        "details": "S, M, L, XL, XXL"
+      },
+      {
+        "feature": "Care",
+        "details": "Machine Wash Cold"
+      },
+      {
+        "feature": "Warranty",
+        "details": "None (Fashion Item)"
+      }
+    ]
+  },
+  {
+    "id": 49,
+    "name": "Auraflow Headphones",
+    "price": 3059,
+    "description": "High-quality furniture product.",
+    "image": "/images/auraflow-headphones.avif",
+    "images": [
+      "/images/auraflow-headphones.avif"
+    ],
+    "category": "Furniture",
+    "rating": 4.1,
+    "inStock": true,
+    "sale": false,
+    "keyFeatures": [
+      "Ergonomic design",
+      "Sturdy construction",
+      "Easy assembly",
+      "Space-saving",
+      "Modern aesthetic"
+    ],
+    "specifications": [
+      {
+        "feature": "Product Name",
+        "details": "Auraflow Headphones"
+      },
+      {
+        "feature": "Material",
+        "details": "Wood / Metal / Fabric"
+      },
+      {
+        "feature": "Weight Capacity",
+        "details": "100-150kg"
+      },
+      {
+        "feature": "Dimensions",
+        "details": "As per product"
+      },
+      {
+        "feature": "Color Options",
+        "details": "Natural, Black, Gray"
+      },
+      {
+        "feature": "Warranty",
+        "details": "2 Years"
+      }
+    ]
+  },
+  {
+    "id": 50,
+    "name": "Chronofit Watch",
+    "price": 1947,
+    "description": "High-quality furniture product.",
+    "image": "/images/chronofit-watch.avif",
+    "images": [
+      "/images/chronofit-watch.avif"
+    ],
+    "category": "Furniture",
+    "rating": 4.5,
+    "inStock": false,
+    "sale": true,
+    "keyFeatures": [
+      "Ergonomic design",
+      "Sturdy construction",
+      "Easy assembly",
+      "Space-saving",
+      "Modern aesthetic"
+    ],
+    "specifications": [
+      {
+        "feature": "Product Name",
+        "details": "Chronofit Watch"
+      },
+      {
+        "feature": "Material",
+        "details": "Wood / Metal / Fabric"
+      },
+      {
+        "feature": "Weight Capacity",
+        "details": "100-150kg"
+      },
+      {
+        "feature": "Dimensions",
+        "details": "As per product"
+      },
+      {
+        "feature": "Color Options",
+        "details": "Natural, Black, Gray"
+      },
+      {
+        "feature": "Warranty",
+        "details": "2 Years"
+      }
+    ]
+  },
+  {
+    "id": 51,
+    "name": "Ergoglide Chair",
+    "price": 1630,
+    "description": "High-quality electronics product.",
+    "image": "/images/ergoglide-chair.avif",
+    "images": [
+      "/images/ergoglide-chair.avif"
+    ],
+    "category": "Electronics",
+    "rating": 4.9,
+    "inStock": true,
+    "sale": true,
+    "keyFeatures": [
+      "Modern design",
+      "Energy efficient",
+      "Easy to use",
+      "Durable build quality",
+      "Compatible with latest devices"
+    ],
+    "specifications": [
+      {
+        "feature": "Product Name",
+        "details": "Ergoglide Chair"
+      },
+      {
+        "feature": "Input",
+        "details": "USB-C / 5V"
+      },
+      {
+        "feature": "Material",
+        "details": "ABS Plastic"
+      },
+      {
+        "feature": "Dimensions",
+        "details": "Varies by model"
+      },
+      {
+        "feature": "Color Options",
+        "details": "Black, Silver"
+      },
+      {
+        "feature": "Warranty",
+        "details": "1 Year"
+      }
+    ]
+  },
+  {
+    "id": 52,
+    "name": "Essential Tee",
+    "price": 3823,
+    "description": "High-quality clothing product.",
+    "image": "/images/essential-tee.avif",
+    "images": [
+      "/images/essential-tee.avif"
+    ],
+    "category": "Clothing",
+    "rating": 4.6,
+    "inStock": true,
+    "sale": true,
+    "keyFeatures": [
+      "Premium fabric",
+      "Comfortable fit",
+      "Machine washable",
+      "Breathable material",
+      "Stylish design"
+    ],
+    "specifications": [
+      {
+        "feature": "Product Name",
+        "details": "Essential Tee"
+      },
+      {
+        "feature": "Material",
+        "details": "Cotton / Polyester Blend"
+      },
+      {
+        "feature": "Fit",
+        "details": "Regular / Slim / Oversized"
+      },
+      {
+        "feature": "Sizes",
+        "details": "S, M, L, XL, XXL"
+      },
+      {
+        "feature": "Care",
+        "details": "Machine Wash Cold"
+      },
+      {
+        "feature": "Warranty",
+        "details": "None (Fashion Item)"
+      }
+    ]
+  },
+  {
+    "id": 53,
+    "name": "Luminar Lamp",
+    "price": 1520,
+    "description": "High-quality furniture product.",
+    "image": "/images/luminar-lamp.avif",
+    "images": [
+      "/images/luminar-lamp.avif"
+    ],
+    "category": "Furniture",
+    "rating": 4.6,
+    "inStock": true,
+    "sale": true,
+    "keyFeatures": [
+      "Ergonomic design",
+      "Sturdy construction",
+      "Easy assembly",
+      "Space-saving",
+      "Modern aesthetic"
+    ],
+    "specifications": [
+      {
+        "feature": "Product Name",
+        "details": "Luminar Lamp"
+      },
+      {
+        "feature": "Material",
+        "details": "Wood / Metal / Fabric"
+      },
+      {
+        "feature": "Weight Capacity",
+        "details": "100-150kg"
+      },
+      {
+        "feature": "Dimensions",
+        "details": "As per product"
+      },
+      {
+        "feature": "Color Options",
+        "details": "Natural, Black, Gray"
+      },
+      {
+        "feature": "Warranty",
+        "details": "2 Years"
+      }
+    ]
+  },
+  {
+    "id": 54,
+    "name": "Scentscape Candles",
+    "price": 4868,
+    "description": "High-quality clothing product.",
+    "image": "/images/scentscape-candles.avif",
+    "images": [
+      "/images/scentscape-candles.avif"
+    ],
+    "category": "Clothing",
+    "rating": 4.6,
+    "inStock": true,
+    "sale": false,
+    "keyFeatures": [
+      "Premium fabric",
+      "Comfortable fit",
+      "Machine washable",
+      "Breathable material",
+      "Stylish design"
+    ],
+    "specifications": [
+      {
+        "feature": "Product Name",
+        "details": "Scentscape Candles"
+      },
+      {
+        "feature": "Material",
+        "details": "Cotton / Polyester Blend"
+      },
+      {
+        "feature": "Fit",
+        "details": "Regular / Slim / Oversized"
+      },
+      {
+        "feature": "Sizes",
+        "details": "S, M, L, XL, XXL"
+      },
+      {
+        "feature": "Care",
+        "details": "Machine Wash Cold"
+      },
+      {
+        "feature": "Warranty",
+        "details": "None (Fashion Item)"
+      }
+    ]
+  },
+  {
+    "id": 55,
+    "name": "Serenity Throw",
+    "price": 1724,
+    "description": "High-quality audio product.",
+    "image": "/images/serenity-throw.avif",
+    "images": [
+      "/images/serenity-throw.avif"
+    ],
+    "category": "Audio",
+    "rating": 4.2,
+    "inStock": true,
+    "sale": false,
+    "keyFeatures": [
+      "High-fidelity sound",
+      "Comfortable over-ear design",
+      "Long battery life",
+      "Bluetooth 5.3 connectivity",
+      "Built-in microphone"
+    ],
+    "specifications": [
+      {
+        "feature": "Product Name",
+        "details": "Serenity Throw"
+      },
+      {
+        "feature": "Driver Size",
+        "details": "40mm"
+      },
+      {
+        "feature": "Battery Life",
+        "details": "Up to 30 hours"
+      },
+      {
+        "feature": "Connectivity",
+        "details": "Bluetooth 5.3"
+      },
+      {
+        "feature": "Color Options",
+        "details": "Black, White, Blue"
+      },
+      {
+        "feature": "Warranty",
+        "details": "1 Year"
+      }
+    ]
+  },
+  {
+    "id": 56,
+    "name": "Zenith Wallet",
+    "price": 5890,
+    "description": "High-quality clothing product.",
+    "image": "/images/zenith-wallet.avif",
+    "images": [
+      "/images/zenith-wallet.avif"
+    ],
+    "category": "Clothing",
+    "rating": 4.9,
+    "inStock": true,
+    "sale": false,
+    "keyFeatures": [
+      "Premium fabric",
+      "Comfortable fit",
+      "Machine washable",
+      "Breathable material",
+      "Stylish design"
+    ],
+    "specifications": [
+      {
+        "feature": "Product Name",
+        "details": "Zenith Wallet"
+      },
+      {
+        "feature": "Material",
+        "details": "Cotton / Polyester Blend"
+      },
+      {
+        "feature": "Fit",
+        "details": "Regular / Slim / Oversized"
+      },
+      {
+        "feature": "Sizes",
+        "details": "S, M, L, XL, XXL"
+      },
+      {
+        "feature": "Care",
+        "details": "Machine Wash Cold"
+      },
+      {
+        "feature": "Warranty",
+        "details": "None (Fashion Item)"
+      }
+    ]
+  },
+  {
+    "id": 57,
+    "name": "Auraflow Headphones",
+    "price": 4261,
+    "description": "High-quality audio product.",
+    "image": "/images/auraflow-headphones.avif",
+    "images": [
+      "/images/auraflow-headphones.avif"
+    ],
+    "category": "Audio",
+    "rating": 4.4,
+    "inStock": true,
+    "sale": false,
+    "keyFeatures": [
+      "High-fidelity sound",
+      "Comfortable over-ear design",
+      "Long battery life",
+      "Bluetooth 5.3 connectivity",
+      "Built-in microphone"
+    ],
+    "specifications": [
+      {
+        "feature": "Product Name",
+        "details": "Auraflow Headphones"
+      },
+      {
+        "feature": "Driver Size",
+        "details": "40mm"
+      },
+      {
+        "feature": "Battery Life",
+        "details": "Up to 30 hours"
+      },
+      {
+        "feature": "Connectivity",
+        "details": "Bluetooth 5.3"
+      },
+      {
+        "feature": "Color Options",
+        "details": "Black, White, Blue"
+      },
+      {
+        "feature": "Warranty",
+        "details": "1 Year"
+      }
+    ]
+  },
+  {
+    "id": 58,
+    "name": "Chronofit Watch",
+    "price": 5980,
+    "description": "High-quality accessories product.",
+    "image": "/images/chronofit-watch.avif",
+    "images": [
+      "/images/chronofit-watch.avif"
+    ],
+    "category": "Accessories",
+    "rating": 4.7,
+    "inStock": true,
+    "sale": true,
+    "keyFeatures": [
+      "High-quality product",
+      "Durable and reliable",
+      "Great value"
+    ],
+    "specifications": [
+      {
+        "feature": "Product Name",
+        "details": "Chronofit Watch"
+      },
+      {
+        "feature": "Category",
+        "details": "Accessories"
+      },
+      {
+        "feature": "Warranty",
+        "details": "1 Year"
+      }
+    ]
+  },
+  {
+    "id": 59,
+    "name": "Ergoglide Chair",
+    "price": 3592,
+    "description": "High-quality home product.",
+    "image": "/images/ergoglide-chair.avif",
+    "images": [
+      "/images/ergoglide-chair.avif"
+    ],
+    "category": "Home",
+    "rating": 4,
+    "inStock": true,
+    "sale": false,
+    "keyFeatures": [
+      "Elegant design",
+      "Durable material",
+      "Easy to maintain",
+      "Perfect for daily use",
+      "Adds warmth to any room"
+    ],
+    "specifications": [
+      {
+        "feature": "Product Name",
+        "details": "Ergoglide Chair"
+      },
+      {
+        "feature": "Material",
+        "details": "Varies by product"
+      },
+      {
+        "feature": "Dimensions",
+        "details": "As per product"
+      },
+      {
+        "feature": "Care",
+        "details": "Wipe clean / Machine wash"
+      },
+      {
+        "feature": "Color Options",
+        "details": "Multiple"
+      },
+      {
+        "feature": "Warranty",
+        "details": "1 Year (if applicable)"
+      }
+    ]
+  },
+  {
+    "id": 60,
+    "name": "Essential Tee",
+    "price": 4992,
+    "description": "High-quality accessories product.",
+    "image": "/images/essential-tee.avif",
+    "images": [
+      "/images/essential-tee.avif"
+    ],
     "category": "Accessories",
     "rating": 4.5,
     "inStock": true,
-    "sale": true
+    "sale": true,
+    "keyFeatures": [
+      "High-quality product",
+      "Durable and reliable",
+      "Great value"
+    ],
+    "specifications": [
+      {
+        "feature": "Product Name",
+        "details": "Essential Tee"
+      },
+      {
+        "feature": "Category",
+        "details": "Accessories"
+      },
+      {
+        "feature": "Warranty",
+        "details": "1 Year"
+      }
+    ]
   }
-];
+]
