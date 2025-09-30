@@ -4,7 +4,14 @@ import Hero from '../../app/hero'
 import Footer from '../../app/footer'
 export default function ContactPage() {
   return (
-    <main className="bg-white text-gray-800 min-h-screen py-12 px-6 sm:px-10 md:px-20">
+    <main
+      className="relative text-gray-800 min-h-screen py-12 px-6 sm:px-10 md:px-20 bg-cover bg-center"
+      style={{
+        backgroundImage:
+          "url('https://images.pexels.com/photos/5632402/pexels-photo-5632402.jpeg')",
+      }}
+    >
+
      <Nav />
       {/* Page Title */}
       <section className="text-center mb-12">
