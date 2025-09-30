@@ -10,8 +10,12 @@ export default function Home() {
     <>
       <Nav />
       <Hero />
+<<<<<<< HEAD
+
+=======
       <FeaturedProduct  products={products}/>
       <ProductPage />
+>>>>>>> 3b3eca5b8eef4fd4d641946820f554438b1b066d
       <Footer />
     </>
   );
