@@ -4,6 +4,9 @@ import { useState, useEffect } from "react";
 import { products } from "../../data/products";
 import ProductCard from "../../components/ProductCard";
 import LoadingOverlay from "../../components/LoadingSpinner";
+import Nav from "../../app/nav";
+import Hero from "../../app/hero";
+import Footer from "../../app/footer";
 
 export default function ProductsPage() {
   const [currentPage, setCurrentPage] = useState(1);
@@ -12,6 +15,9 @@ export default function ProductsPage() {
   const [selectedPriceRange, setSelectedPriceRange] = useState<
     [number, number] | null
   >(null);
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [currentPage]);
   const [loading, setLoading] = useState(false); // Loading for all actions
 
   const productsPerPage = 9;
@@ -95,11 +101,14 @@ export default function ProductsPage() {
 
   return (
     <div className="container mx-auto px-0 py-8">
-      <h1 className=" text-center text-6xl font-bold mb-16">Our Products</h1>
+      <Nav />
+      <Hero />
+      <h1 className=" text-center text-4xl font-bold mb-8 mt-15">
+        OUR PRODUCTS
+      </h1>
 
       <div className="flex">
-        {/* Fixed Sidebar - Categories, Filters, Tags */}
-        <div className="w-1/5 pr-8 fixed top-4 left-4 h-[calc(100vh-2rem)] overflow-y-auto">
+        <div className="w-1/5 pr-8">
           {/* Categories */}
           <div className="mb-8">
             <h3 className="font-semibold text-lg mb-4">CATEGORIES</h3>
@@ -201,7 +210,7 @@ export default function ProductsPage() {
         </div>
 
         {/* Main Content - Products */}
-        <div className="w-4/5 ml-[20%]">
+        <div className="w-4/5">
           {/* Results and Sort */}
           <div className="flex justify-between items-center mb-6">
             <div>
@@ -277,6 +286,7 @@ export default function ProductsPage() {
         {/* Loading Overlay - For all actions */}
         {loading && <LoadingOverlay />}
       </div>
+      <Footer />
     </div>
   );
 }
