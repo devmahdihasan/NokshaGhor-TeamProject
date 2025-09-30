@@ -37,7 +37,7 @@ export default function Hero() {
             prevIndex === 0 ? images.length - 1 : prevIndex - 1
           )
         }
-        className="absolute top-1/2 left-3 transform -translate-y-1/2 bg-white p-2 rounded-full shadow hover:bg-gray-100 transition"
+        className="absolute top-1/2 left-3 transform -translate-y-1/2 bg-white text-orange-500 p-2 rounded-full shadow hover:bg-gray-100 transition"
       >
         {/* Left Arrow SVG */}
         <svg xmlns="http://www.w3.org/2000/svg" className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -49,7 +49,7 @@ export default function Hero() {
         onClick={() =>
           setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length)
         }
-        className="absolute top-1/2 right-3 transform -translate-y-1/2 bg-white p-2 rounded-full shadow hover:bg-gray-100 transition"
+        className="absolute top-1/2 right-3 transform -translate-y-1/2 bg-white  text-orange-500 p-2 rounded-full shadow hover:bg-gray-100 transition"
       >
         {/* Right Arrow SVG */}
         <svg xmlns="http://www.w3.org/2000/svg" className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
