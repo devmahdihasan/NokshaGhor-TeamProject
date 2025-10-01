@@ -1,10 +1,10 @@
 import Nav from "../app/nav";
 import Hero from "../app/hero";
 import Footer from "../app/footer";
-import ProductPage from "../app/products/page";
 
+import ProductCard from "@/components/ProductCard";
 import { products } from "@/data/products";
-import FeaturedProduct from "../app/FeaturedProduct"; // make sure this path is correct
+import FeaturedProduct from "./FeaturedProduct";
 
 export default function Home() {
   return (
@@ -12,12 +12,7 @@ export default function Home() {
       <Nav />
       <Hero />
 
-      {/* Featured products section */}
-      <FeaturedProduct products={products} />
-
-      {/* Full product listing */}
-      <ProductPage />
-
+     <FeaturedProduct products={products} />
       <Footer />
     </>
   );
