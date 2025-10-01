@@ -8,7 +8,8 @@ export const products: Product[] = [
     "description": "High-quality accessories product.",
     "image": "/images/auraflow-headphones.avif",
     "images": [
-      "/images/auraflow-headphones.avif"
+      "/images/auraflow-headphones.avif",
+      "/images/chronofit-watch.avif"
     ],
     "category": "Accessories",
     "rating": 4.6,
@@ -41,7 +42,8 @@ export const products: Product[] = [
     "description": "High-quality electronics product.",
     "image": "/images/chronofit-watch.avif",
     "images": [
-      "/images/chronofit-watch.avif"
+      "/images/chronofit-watch.avif",
+      "/images/auraflow-headphones.avif"
     ],
     "category": "Electronics",
     "rating": 4.9,
