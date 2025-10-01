@@ -1,9 +1,18 @@
 // src/app/contact/page.tsx
-
+import Nav from '../../app/nav'
+import Hero from '../../app/hero'
+import Footer from '../../app/footer'
 export default function ContactPage() {
   return (
-    <main className="bg-white text-gray-800 min-h-screen py-12 px-6 sm:px-10 md:px-20">
+    <main
+      className="relative text-gray-800 min-h-screen py-12 px-6 sm:px-10 md:px-20 bg-cover bg-center"
+      style={{
+        backgroundImage:
+          "url('https://images.pexels.com/photos/5632402/pexels-photo-5632402.jpeg')",
+      }}
+    >
 
+     <Nav />
       {/* Page Title */}
       <section className="text-center mb-12">
         <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 mb-4">
@@ -21,8 +30,6 @@ export default function ContactPage() {
         <div className="bg-gray-50 p-6 rounded-xl shadow hover:shadow-lg transition">
           <h3 className="text-lg font-semibold text-gray-900 mb-2">Contact Us</h3>
           <p className="text-orange-600 font-bold text-lg">16793 / 09678002003</p>
-          <h3 className="text-lg font-semibold text-gray-900 mt-4 mb-2">Gmail</h3>
-          <p className="text-orange-600 font-bold text-lg">nokshaghor23@gmail.com</p>
         </div>
 
         {/* Card 2 */}
@@ -33,13 +40,9 @@ export default function ContactPage() {
 
         {/* Card 3 */}
         <div className="bg-gray-50 p-6 rounded-xl shadow hover:shadow-lg transition">
-          <h3 className="text-lg font-semibold text-gray-900 mb-2">Get Online Support</h3>
-          <a
-            href="#"
-            className="text-blue-600 font-medium hover:underline"
-          >
-            Request Support →
-          </a>
+          <h3 className="text-lg font-semibold text-gray-900 mt-4 mb-2">Gmail</h3>
+          <p className="text-orange-600 font-bold text-lg">nokshaghor23@gmail.com</p>
+        
         </div>
       </section>
 
@@ -96,7 +99,7 @@ export default function ContactPage() {
           </button>
         </form>
       </section>
-
+     <Footer />
     </main>
   );
 }

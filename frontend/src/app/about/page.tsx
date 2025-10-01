@@ -1,9 +1,13 @@
 // src/app/about/page.tsx
+import Nav from '../../app/nav'
+
+import Footer from '../../app/footer'
 
 export default function AboutPage() {
   return (
     <main className="bg-white text-gray-800 min-h-screen py-12 px-6 sm:px-10 md:px-20">
-
+      <Nav />
+      
       {/* Page Title */}
       <section className="text-center mb-12 md:mb-16">
         <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 mb-4">
@@ -38,70 +42,61 @@ export default function AboutPage() {
         </p>
       </section>
 
-      {/* Products Section */}
-      <section className="mb-16">
-          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-center text-gray-900 mb-8">
-    Demo Products
-  </h2>
-        <div className="flex flex-wrap justify-center gap-8 md:gap-12">
-          {/* Product 1 */}
-          <div className="flex flex-col items-center cursor-pointer transform transition-transform duration-300 active:scale-95 hover:scale-105">
-            <img
-              src="https://images.pexels.com/photos/1649771/pexels-photo-1649771.jpeg"
-              alt="Headphones"
-              className="w-40 sm:w-52 md:w-60 h-40 sm:h-52 md:h-60 object-cover rounded-lg shadow-lg"
-            />
-            <p className="mt-3 text-base sm:text-lg font-semibold text-gray-700">Headphones</p>
-          </div>
+<section className="mb-16">
+  <div className="flex justify-center">
+    <img
+      src="https://images.pexels.com/photos/6956800/pexels-photo-6956800.jpeg"
+      className="w-full max-w-6xl h-[30rem] object-cover rounded-xl shadow-2xl"
+    />
+  </div>
+</section>
 
-          {/* Product 2 */}
-          <div className="flex flex-col items-center cursor-pointer transform transition-transform duration-300 active:scale-95 hover:scale-105">
-            <img
-              src="https://images.pexels.com/photos/1194760/pexels-photo-1194760.jpeg"
-              alt="Smartphones"
-              className="w-40 sm:w-52 md:w-60 h-40 sm:h-52 md:h-60 object-cover rounded-lg shadow-lg"
-            />
-            <p className="mt-3 text-base sm:text-lg font-semibold text-gray-700">Smartphones</p>
+   {/* Team Introduction */}
+      <section className="mb-20">
+        <h2 className="text-3xl font-semibold text-gray-900 mb-10 border-l-4 border-orange-500 pl-4">
+          Meet Our Team
+        </h2>
+        <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-4">
+          {/* Person 1 */}
+          <div className="bg-gray-50 shadow-md rounded-xl p-6 text-center hover:shadow-xl transition">
+            <h3 className="text-xl font-bold text-gray-900 mb-2">Mahdi Hasan</h3>
+            <p className="text-orange-600 font-medium mb-3">Team Leader</p>
+            <p className="text-sm text-gray-600">
+              Visionary leader dedicated to guiding Nokshaghor with innovation 
+              and cultural pride.
+            </p>
           </div>
-
-          {/* Product 3 */}
-          <div className="flex flex-col items-center cursor-pointer transform transition-transform duration-300 active:scale-95 hover:scale-105">
-            <img
-              src="https://images.pexels.com/photos/3675622/pexels-photo-3675622.jpeg"
-              alt="Electric Fan"
-              className="w-40 sm:w-52 md:w-60 h-40 sm:h-52 md:h-60 object-cover rounded-lg shadow-lg"
-            />
-            <p className="mt-3 text-base sm:text-lg font-semibold text-gray-700">Electric Fan</p>
+          {/* Person 2 */}
+          <div className="bg-gray-50 shadow-md rounded-xl p-6 text-center hover:shadow-xl transition">
+            <h3 className="text-xl font-bold text-gray-900 mb-2">Zishan</h3>
+            <p className="text-orange-600 font-medium mb-3">Designer</p>
+            <p className="text-sm text-gray-600">
+              Creative mind behind our designs, ensuring elegance and uniqueness 
+              in every detail.
+            </p>
           </div>
-
-          {/* Product 4 */}
-          <div className="flex flex-col items-center cursor-pointer transform transition-transform duration-300 active:scale-95 hover:scale-105">
-            <img
-              src="https://images.pexels.com/photos/132340/pexels-photo-132340.jpeg"
-              alt="Electric Light"
-              className="w-40 sm:w-52 md:w-60 h-40 sm:h-52 md:h-60 object-cover rounded-lg shadow-lg"
-            />
-            <p className="mt-3 text-base sm:text-lg font-semibold text-gray-700">Electric Light</p>
+          {/* Person 3 */}
+          <div className="bg-gray-50 shadow-md rounded-xl p-6 text-center hover:shadow-xl transition">
+            <h3 className="text-xl font-bold text-gray-900 mb-2">Imran</h3>
+            <p className="text-orange-600 font-medium mb-3">Developer</p>
+            <p className="text-sm text-gray-600">
+              Tech expert ensuring seamless experiences through innovative web 
+              and digital solutions.
+            </p>
+          </div>
+          {/* Person 4 */}
+          <div className="bg-gray-50 shadow-md rounded-xl p-6 text-center hover:shadow-xl transition">
+            <h3 className="text-xl font-bold text-gray-900 mb-2">Tanzina</h3>
+            <p className="text-orange-600 font-medium mb-3">Marketing Lead</p>
+            <p className="text-sm text-gray-600">
+              Driving growth by connecting Nokshaghor’s story with people across 
+              the globe.
+            </p>
           </div>
         </div>
       </section>
 
-      {/* Video Section */}
-<section className="mb-16">
-  <div className="flex flex-col items-center justify-center gap-4">
-    <video
-      src="https://www.w3schools.com/html/mov_bbb.mp4"
-      controls
-      autoPlay={false}
-      loop
-      muted
-      className="w-full max-w-5xl h-auto rounded-lg shadow-lg"
-    />
-    <p className="text-base sm:text-lg font-semibold text-gray-700">
-      Product Demo Video
-    </p>
-  </div>
-</section>
+
       {/* Mission & Values Section */}
 <section className="bg-orange-600 text-white py-16 px-6 sm:px-10 md:px-20">
   <div className="max-w-6xl mx-auto grid gap-12 md:grid-cols-2">
@@ -144,7 +139,7 @@ export default function AboutPage() {
           Contact Us
         </a>
       </section>
-
+      <Footer />
     </main>
   );
 }
