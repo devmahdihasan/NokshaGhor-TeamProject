@@ -84,7 +84,7 @@ export default function Nav() {
           <input
             type="text"
             placeholder="Search for products, brands and more"
-            className="w-full text-amber-300 px-4 py-2 border rounded-l-full focus:outline-none focus:ring-1 focus:ring-orange-500"
+            className="w-full px-4 py-2 border rounded-l-full focus:outline-none focus:ring-1 focus:ring-orange-500"
           />
           <button className="bg-orange-500 text-white px-4 py-2 rounded-r-full hover:bg-orange-600 transition">
             Search
