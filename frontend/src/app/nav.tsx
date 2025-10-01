@@ -145,11 +145,11 @@ export default function Nav() {
       </AnimatePresence>
 
       {/* Mobile Search Bar */}
-      <div className="md:hidden  text-amber-300 px-4 pb-3">
+      <div className="md:hidden  text-black px-4 pb-3">
         <input
           type="text"
           placeholder="Search for products..."
-          className="w-[62%] px-4 py-2 border  rounded-l-full focus:outline-none focus:ring-1 focus:ring-orange-500"
+          className="w-[62%] px-4 py-2 border rounded-l-full focus:outline-none focus:ring-1 focus:ring-orange-500"
         />
 
          <button className="bg-orange-500 text-white px-4 py-2 rounded-r-full hover:bg-orange-600 transition">
