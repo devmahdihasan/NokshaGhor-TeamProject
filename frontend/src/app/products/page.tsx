@@ -1,9 +1,13 @@
+// src/app/products/page.tsx
 "use client";
 
 import { useState, useEffect } from "react";
 import { products } from "../../data/products";
 import ProductCard from "../../components/ProductCard";
 import LoadingOverlay from "../../components/LoadingSpinner";
+import Nav from "../nav";
+import Hero from "../hero";
+import Footer from "../footer";
 
 export default function ProductsPage() {
   const [currentPage, setCurrentPage] = useState(1);
@@ -12,35 +16,28 @@ export default function ProductsPage() {
   const [selectedPriceRange, setSelectedPriceRange] = useState<
     [number, number] | null
   >(null);
-  const [loading, setLoading] = useState(false); // Loading for all actions
+  const [showFilters, setShowFilters] = useState(false); // 👈 Mobile filter toggle
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [currentPage]);
 
-  const productsPerPage = 9;
+  const [loading, setLoading] = useState(false);
+  const productsPerPage = 12;
 
-  // Filter and sort products
   let filteredProducts = products.filter((product) => {
-    // Category filter
     const categoryMatch =
       !selectedCategory || product.category === selectedCategory;
-
-    // Price filter
     const priceMatch =
       !selectedPriceRange ||
       (product.price >= selectedPriceRange[0] &&
         product.price <= selectedPriceRange[1]);
-
     return categoryMatch && priceMatch;
   });
 
-  // Sort products
   filteredProducts.sort((a, b) => {
-    if (sortOrder === "asc") {
-      return a.price - b.price;
-    } else {
-      return b.price - a.price;
-    }
+    return sortOrder === "asc" ? a.price - b.price : b.price - a.price;
   });
 
-  // Calculate pagination for filtered products
   const indexOfLastProduct = currentPage * productsPerPage;
   const indexOfFirstProduct = indexOfLastProduct - productsPerPage;
   const currentProducts = filteredProducts.slice(
@@ -48,235 +45,223 @@ export default function ProductsPage() {
     indexOfLastProduct
   );
   const totalPages = Math.ceil(filteredProducts.length / productsPerPage);
-
-  // Get unique categories
   const categories = [...new Set(products.map((p) => p.category))];
 
-  // Function to handle page change with loading
   const handlePageChange = (page: number) => {
     setLoading(true);
     setTimeout(() => {
       setCurrentPage(page);
       setLoading(false);
-    }, 500);
+    }, 300);
   };
 
-  // Function to handle category change with loading
   const handleCategoryChange = (category: string) => {
     setLoading(true);
     setTimeout(() => {
       setSelectedCategory((prev) => (prev === category ? null : category));
-      setCurrentPage(1); // Reset to first page
+      setCurrentPage(1);
       setLoading(false);
-    }, 500);
+    }, 300);
   };
 
-  // Function to handle price range change with loading
   const handlePriceRangeChange = (min: number, max: number) => {
     setLoading(true);
     setTimeout(() => {
       setSelectedPriceRange((prev) =>
         prev && prev[0] === min && prev[1] === max ? null : [min, max]
       );
-      setCurrentPage(1); // Reset to first page
+      setCurrentPage(1);
       setLoading(false);
-    }, 500);
+    }, 300);
   };
 
-  // Function to handle sort change with loading
   const handleSortChange = (order: "asc" | "desc") => {
     setLoading(true);
     setTimeout(() => {
       setSortOrder(order);
-      setCurrentPage(1); // Reset to first page
+      setCurrentPage(1);
       setLoading(false);
-    }, 500);
+    }, 300);
   };
 
   return (
-    <div className="container mx-auto px-0 py-8">
-      <h1 className=" text-center text-6xl font-bold mb-16">Our Products</h1>
+    <div className="min-h-screen bg-white">
+      <Nav />
+      <Hero />
 
-      <div className="flex">
-        {/* Fixed Sidebar - Categories, Filters, Tags */}
-        <div className="w-1/5 pr-8 fixed top-4 left-4 h-[calc(100vh-2rem)] overflow-y-auto">
-          {/* Categories */}
-          <div className="mb-8">
-            <h3 className="font-semibold text-lg mb-4">CATEGORIES</h3>
-            <ul className="space-y-2">
-              {categories.map((category, index) => (
-                <li key={index}>
-                  <button
-                    onClick={() => handleCategoryChange(category)}
-                    className={`flex items-center w-full text-left p-2 rounded ${
-                      selectedCategory === category
-                        ? "text-blue-600"
-                        : "hover:bg-gray-100"
-                    }`}
-                  >
-                    <span className="mr-2">
-                      {selectedCategory === category ? "✓" : "○"}
-                    </span>
-                    {category} (
-                    {products.filter((p) => p.category === category).length})
-                  </button>
-                </li>
-              ))}
-            </ul>
-          </div>
+      <div className="container mx-auto px-4 py-8">
+        <h1 className="text-center text-3xl font-bold mb-8 mt-6">
+          OUR PRODUCTS
+        </h1>
 
-          {/* Price Filter */}
-          <div className="mb-8">
-            <h3 className="font-semibold text-lg mb-4">FILTER BY PRICE</h3>
-            <div className="space-y-2">
-              <button
-                onClick={() => handlePriceRangeChange(0, 50)}
-                className={`flex items-center w-full text-left p-2 rounded ${
-                  selectedPriceRange &&
-                  selectedPriceRange[0] === 0 &&
-                  selectedPriceRange[1] === 50
-                    ? "bg-blue-100 text-blue-600 border border-blue-300"
-                    : "hover:bg-gray-100"
-                }`}
-              >
-                $0 - $50
-              </button>
-              <button
-                onClick={() => handlePriceRangeChange(51, 100)}
-                className={`flex items-center w-full text-left p-2 rounded ${
-                  selectedPriceRange &&
-                  selectedPriceRange[0] === 51 &&
-                  selectedPriceRange[1] === 100
-                    ? "bg-blue-100 text-blue-600 border border-blue-300"
-                    : "hover:bg-gray-100"
-                }`}
-              >
-                $51 - $100
-              </button>
-              <button
-                onClick={() => handlePriceRangeChange(101, 200)}
-                className={`flex items-center w-full text-left p-2 rounded ${
-                  selectedPriceRange &&
-                  selectedPriceRange[0] === 101 &&
-                  selectedPriceRange[1] === 200
-                    ? "bg-blue-100 text-blue-600 border border-blue-300"
-                    : "hover:bg-gray-100"
-                }`}
-              >
-                $101 - $200
-              </button>
-              <button
-                onClick={() => handlePriceRangeChange(201, 500)}
-                className={`flex items-center w-full text-left p-2 rounded ${
-                  selectedPriceRange &&
-                  selectedPriceRange[0] === 201 &&
-                  selectedPriceRange[1] === 500
-                    ? "bg-blue-100 text-blue-600 border border-blue-300"
-                    : "hover:bg-gray-100"
-                }`}
-              >
-                $201 - $500
-              </button>
-            </div>
-          </div>
-
-          {/* Tags */}
-          <div>
-            <h3 className="font-semibold text-lg mb-4">TAGS</h3>
-            <div className="flex flex-wrap gap-2">
-              <button className="px-3 py-1 bg-gray-200 text-gray-700 rounded-full text-sm hover:bg-gray-300">
-                New
-              </button>
-              <button className="px-3 py-1 bg-gray-200 text-gray-700 rounded-full text-sm hover:bg-gray-300">
-                Sale
-              </button>
-              <button className="px-3 py-1 bg-gray-200 text-gray-700 rounded-full text-sm hover:bg-gray-300">
-                Popular
-              </button>
-              <button className="px-3 py-1 bg-gray-200 text-gray-700 rounded-full text-sm hover:bg-gray-300">
-                Trending
-              </button>
-            </div>
-          </div>
+        {/* Mobile Filter Button */}
+        <div className="lg:hidden mb-4">
+          <button
+            onClick={() => setShowFilters(!showFilters)}
+            className="w-full py-2 bg-gray-100 text-gray-700 rounded-md font-medium"
+          >
+            {showFilters ? "Hide Filters" : "Show Filters"}
+          </button>
         </div>
 
-        {/* Main Content - Products */}
-        <div className="w-4/5 ml-[20%]">
-          {/* Results and Sort */}
-          <div className="flex justify-between items-center mb-6">
-            <div>
-              <span className="text-sm">
-                Showing {indexOfFirstProduct + 1}-
-                {Math.min(indexOfLastProduct, filteredProducts.length)} of{" "}
-                {filteredProducts.length} results
-              </span>
-            </div>
+        <div className="flex flex-col lg:flex-row gap-6">
+          {/* Filters Sidebar - Hidden on mobile unless toggled */}
+          <div
+            className={`lg:w-1/4 w-full lg:block ${
+              showFilters ? "block" : "hidden lg:block"
+            }`}
+          >
+            <div className="bg-gray-50 p-4 rounded-lg">
+              {/* Categories */}
+              <div className="mb-6">
+                <h3 className="font-semibold text-lg mb-3">CATEGORIES</h3>
+                <ul className="space-y-2">
+                  {categories.map((category, index) => (
+                    <li key={index}>
+                      <button
+                        onClick={() => {
+                          handleCategoryChange(category);
+                          if (window.innerWidth < 1024) setShowFilters(false);
+                        }}
+                        className={`flex items-center w-full text-left p-2 rounded text-sm ${
+                          selectedCategory === category
+                            ? "text-blue-600 font-medium"
+                            : "hover:bg-gray-200"
+                        }`}
+                      >
+                        <span className="mr-2">
+                          {selectedCategory === category ? "✓" : "○"}
+                        </span>
+                        {category} (
+                        {products.filter((p) => p.category === category).length}
+                        )
+                      </button>
+                    </li>
+                  ))}
+                </ul>
+              </div>
 
-            <div className="flex items-center space-x-2">
-              <span className="text-sm">Sort by Price:</span>
-              <select
-                value={sortOrder}
-                onChange={(e) =>
-                  handleSortChange(e.target.value as "asc" | "desc")
-                }
-                className="px-2 py-1 border border-gray-300 rounded"
-              >
-                <option value="asc">Low to High</option>
-                <option value="desc">High to Low</option>
-              </select>
+              {/* Price Filter */}
+              <div className="mb-6">
+                <h3 className="font-semibold text-lg mb-3">FILTER BY PRICE</h3>
+                <div className="space-y-2">
+                  {[
+                    [0, 50],
+                    [51, 100],
+                    [101, 200],
+                    [201, 500],
+                  ].map(([min, max]) => (
+                    <button
+                      key={`${min}-${max}`}
+                      onClick={() => {
+                        handlePriceRangeChange(min, max);
+                        if (window.innerWidth < 1024) setShowFilters(false);
+                      }}
+                      className={`flex items-center w-full text-left p-2 rounded text-sm ${
+                        selectedPriceRange &&
+                        selectedPriceRange[0] === min &&
+                        selectedPriceRange[1] === max
+                          ? "bg-blue-100 text-blue-600 border border-blue-300"
+                          : "hover:bg-gray-200"
+                      }`}
+                    >
+                      ${min} - ${max}
+                    </button>
+                  ))}
+                </div>
+              </div>
+
+              {/* Tags */}
+              <div>
+                <h3 className="font-semibold text-lg mb-3">TAGS</h3>
+                <div className="flex flex-wrap gap-2">
+                  {["New", "Sale", "Popular", "Trending"].map((tag) => (
+                    <button
+                      key={tag}
+                      className="px-3 py-1 bg-gray-200 text-gray-700 rounded-full text-xs hover:bg-gray-300"
+                    >
+                      {tag}
+                    </button>
+                  ))}
+                </div>
+              </div>
             </div>
           </div>
 
           {/* Products Grid */}
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {currentProducts.length > 0 ? (
-              currentProducts.map((product) => (
-                <ProductCard key={product.id} product={product} />
-              ))
-            ) : (
-              <div className="col-span-full text-center py-12">
-                <p>No products found matching your criteria.</p>
+          <div className="lg:w-3/4 w-full">
+            {/* Results and Sort */}
+            <div className="flex flex-col sm:flex-row sm:justify-between sm:items-center gap-4 mb-6">
+              <div className="text-sm">
+                Showing {indexOfFirstProduct + 1}-
+                {Math.min(indexOfLastProduct, filteredProducts.length)} of{" "}
+                {filteredProducts.length} results
+              </div>
+
+              <div className="flex items-center gap-2">
+                <span className="text-sm whitespace-nowrap">
+                  Sort by Price:
+                </span>
+                <select
+                  value={sortOrder}
+                  onChange={(e) =>
+                    handleSortChange(e.target.value as "asc" | "desc")
+                  }
+                  className="px-2 py-1 border border-gray-300 rounded text-sm"
+                >
+                  <option value="asc">Low to High</option>
+                  <option value="desc">High to Low</option>
+                </select>
+              </div>
+            </div>
+
+            {/* Products */}
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+              {currentProducts.length > 0 ? (
+                currentProducts.map((product) => (
+                  <ProductCard key={product.id} product={product} />
+                ))
+              ) : (
+                <div className="col-span-full text-center py-12">
+                  <p>No products found.</p>
+                </div>
+              )}
+            </div>
+
+            {/* Previous / Next Buttons Only - No Page Number */}
+            {totalPages > 1 && (
+              <div className="flex justify-center items-center gap-4 mt-8">
+                <button
+                  onClick={() => handlePageChange(currentPage - 1)}
+                  disabled={currentPage === 1}
+                  className={`px-5 py-2 rounded-full text-sm font-medium transition ${
+                    currentPage === 1
+                      ? "bg-gray-300 text-gray-600 cursor-not-allowed"
+                      : "bg-orange-500 text-white hover:bg-orange-600 cursor-pointer"
+                  }`}
+                >
+                  Previous
+                </button>
+
+                <button
+                  onClick={() => handlePageChange(currentPage + 1)}
+                  disabled={currentPage === totalPages}
+                  className={`px-5 py-2 rounded-full text-sm font-medium transition ${
+                    currentPage === totalPages
+                      ? "bg-gray-300 text-gray-600 cursor-not-allowed"
+                      : "bg-orange-500 text-white hover:bg-orange-600 cursor-pointer"
+                  }`}
+                >
+                  Next
+                </button>
               </div>
             )}
           </div>
-
-          {/* Pagination - Next/Previous buttons only */}
-          {totalPages > 1 && (
-            <div className="flex justify-center items-center space-x-4 mt-8">
-              <button
-                onClick={() => handlePageChange(currentPage - 1)}
-                disabled={currentPage === 1}
-                className={`px-4 py-2 border border-gray-300 rounded ${
-                  currentPage === 1
-                    ? "opacity-50 cursor-not-allowed"
-                    : "hover:bg-gray-100"
-                }`}
-              >
-                Previous
-              </button>
-
-              <span className="text-sm">
-                Page {currentPage} of {totalPages}
-              </span>
-
-              <button
-                onClick={() => handlePageChange(currentPage + 1)}
-                disabled={currentPage === totalPages}
-                className={`px-4 py-2 border border-gray-300 rounded ${
-                  currentPage === totalPages
-                    ? "opacity-50 cursor-not-allowed"
-                    : "hover:bg-gray-100"
-                }`}
-              >
-                Next
-              </button>
-            </div>
-          )}
         </div>
 
-        {/* Loading Overlay - For all actions */}
         {loading && <LoadingOverlay />}
       </div>
+      <Footer />
     </div>
   );
 }

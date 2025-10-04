@@ -26,6 +26,35 @@ export default function Nav() {
           NokshaGhor
         </Link>
 
+       {/* 
+<div className="relative hidden md:block">
+  <button
+    onClick={() => setIsCategoriesOpen(!isCategoriesOpen)}
+    className="flex items-center gap-1 text-gray-700 hover:text-orange-500"
+  >
+    <svg xmlns="http://www.w3.org/2000/svg" className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
+    </svg>
+    <span>Categories</span>
+    <svg xmlns="http://www.w3.org/2000/svg" className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+    </svg>
+  </button>
+  {isCategoriesOpen && (
+    <div className="absolute left-0 mt-2 w-56 bg-white border rounded-lg shadow-lg z-50">
+      <ul className="py-2">
+        <li className="px-4 py-2 hover:bg-orange-50 cursor-pointer">Electronics</li>
+        <li className="px-4 py-2 hover:bg-orange-50 cursor-pointer">Fashion</li>
+        <li className="px-4 py-2 hover:bg-orange-50 cursor-pointer">Home & Living</li>
+        <li className="px-4 py-2 hover:bg-orange-50 cursor-pointer">Beauty</li>
+        <li className="px-4 py-2 hover:bg-orange-50 cursor-pointer">Sports</li>
+      </ul>
+    </div>
+  )}
+</div>
+*/}
+
+
         {/* Desktop Nav Links */}
         <nav className="hidden md:flex gap-6">
           {navLinks.map((link) => {
@@ -65,33 +94,7 @@ export default function Nav() {
         {/* Right Section */}
         <div className="flex items-center gap-5">
           {/* Categories Dropdown */}
-          <div className="relative hidden md:block">
-            <button
-              onClick={() => setIsCategoriesOpen(!isCategoriesOpen)}
-              className="flex items-center gap-1 text-gray-700 hover:text-orange-500"
-            >
-              {/* Menu Icon */}
-              <svg xmlns="http://www.w3.org/2000/svg" className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
-              </svg>
-              <span>Categories</span>
-              <svg xmlns="http://www.w3.org/2000/svg" className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
-              </svg>
-            </button>
-            {isCategoriesOpen && (
-              <div className="absolute left-0 mt-2 w-56 bg-white border rounded-lg shadow-lg z-50">
-                <ul className="py-2">
-                  <li className="px-4 py-2 hover:bg-orange-50 cursor-pointer">Electronics</li>
-                  <li className="px-4 py-2 hover:bg-orange-50 cursor-pointer">Fashion</li>
-                  <li className="px-4 py-2 hover:bg-orange-50 cursor-pointer">Home & Living</li>
-                  <li className="px-4 py-2 hover:bg-orange-50 cursor-pointer">Beauty</li>
-                  <li className="px-4 py-2 hover:bg-orange-50 cursor-pointer">Sports</li>
-                </ul>
-              </div>
-            )}
-          </div>
-
+         
           {/* Hamburger Menu (Mobile Only) */}
           <button className="md:hidden" onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}>
             <svg xmlns="http://www.w3.org/2000/svg" className="w-6 h-6 text-gray-700" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -142,12 +145,16 @@ export default function Nav() {
       </AnimatePresence>
 
       {/* Mobile Search Bar */}
-      <div className="md:hidden px-4 pb-3">
+      <div className="md:hidden  text-black px-4 pb-3">
         <input
           type="text"
           placeholder="Search for products..."
-          className="w-full px-4 py-2 border rounded-full focus:outline-none focus:ring-1 focus:ring-orange-500"
+          className="w-[62%] px-4 py-2 border rounded-l-full focus:outline-none focus:ring-1 focus:ring-orange-500"
         />
+
+         <button className="bg-orange-500 text-white px-4 py-2 rounded-r-full hover:bg-orange-600 transition">
+            Search
+          </button>
       </div>
     </header>
   );
